@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>首页</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/common/tips.js"></script>
+	<script src="../../js/home/home.js"></script>
+	<script src="../../js/common/moment.min.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+
+<body class="home-body">
+	<section class="container-home">
+		<!-- 背景音效 -->
+		<audio src="../../mp3/homeBackgroud.mp3" preload="auto" id="homeBackgroud" autoplay loop></audio>
+		<!-- 点击关卡音效 -->
+		<audio src="../../mp3/levelClick.mp3" preload="auto" id="clcikMp3"></audio>
+		<!-- 点击按钮音效 -->
+		<audio src="../../mp3/button.mp3" preload="auto" id="buttonMps"></audio>
+		<!-- 附加页面 -->
+		<audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+		<!--left-->
+		<div class="leftOptions">
+			<div class="left-tabs" id="stamina-tab">
+				<div class="stamina"><img src="../../images/81.png" /></div>
+				<div class="stamina-progress">
+					<span id="nowStamina" class="realStamina"></span><span style="font-size: 11px;" class="regulation">/30</span>
+					<i class='icon_stamina'>+</i>
+					<div class="stamina-value"></div>
+				</div>
+			</div>
+			<div class="left-tabs">
+				<div class="beans"><img src="../../images/83.png" /></div>
+				<div class="beans-progress">
+					<span id="getBeans" class="wisdombean"></span>
+					<div class="beans-value"></div>
+				</div>
+			</div>
+			<div class="left-tabs">
+				<div class="pk"><img src="../../images/84.png" /></div>
+				<div class="pk-progress">
+					<span id="pkValue" class="pkVal"></span>
+					<div class="pk-value"></div>
+				</div>
+			</div>
+		</div>
+		<!--right-->
+		<div class="home-sign">
+			<div class="people">
+				<p>原住民</p>
+				<p id="sum"></p>
+			</div>
+		</div>
+		<div class="inforBox">
+			<div class="right-tabs" id="maildrop-tab">
+				<div class="maildrop"><img src="../../images/86.png" /></div>
+				<div class="nomail" id="letterNum"><span>0</div>
+			</div>
+			<div class="right-tabs" id="signed-tab">
+				<div class="signed"><img src="../../images/87.png" /></div>
+				<div class="nosigned" id="recordContent"><span>未签到</div>
+			</div>
+			<div class="right-tabs" id="treasureBox-tab">
+				<div class="giftbox"><img src="../../images/88.png" /></div>
+				<div class="nogiftbox" id="treasureBoxNum"><span>0</div>
+			</div>
+		</div>
+		<!--center-->
+		<div class="homePageBg">
+			<div class="homeCloudContent">
+				<div class="leftCloud homeLeftCloud"><img src="../../images/left.png" /></div>
+				<div class="centerCloud homeCenterCloud"><img src="../../images/center.png" /></div>
+				<div class="rightCloud homeRightCloud"><img src="../../images/right.png" /></div>
+			</div>
+			<!-- 遍历背景 -->
+			<div class="homeLoop">
+				<!-- <div class="homeLoopBg">
+					<div class="homeContentLoop"></div>
+					<div class="aroundCloudLoop">
+						<div class="oddBigCloudLoop"><img src="../../images/left.png"></div>
+						<div class="leftCloudLoop"><img src="../../images/254.png" /></div>
+						<div class="rightCloudLoop"><img src="../../images/254.png" /></div>
+					</div>
+					<ul class="level-list">
+						<li class="evenList evenFailLevel"><span>6</span>
+							<div class="evenWillLevel"></div>
+							<div class="noSpecialReward"><img src="../../images/101.png" /><span>其他奖励</span></div>
+							<div class="cloudContent">
+								<div class="leftCloud moveLeft"><img src="../../images/left.png" /></div>
+								<div class="centerCloud"><img src="../../images/center.png" /></div>
+								<div class="rightCloud moveRight"><img src="../../images/right.png" /></div>
+							</div>
+						</li>
+						<li class="oddList oddFailLevel"><span>5</span>
+							<div class="oddWillLevel"></div>
+							<div class="specialReward"><img src="../../images/101.png" /><span>其他奖励</span></div>
+						</li>
+						<li class="evenList evenFailLevel"><span>4</span>
+							<div class="levelTime">
+								<p>22分2秒</p>
+								<p><img src="../../images/97.png" />+10</p>
+							</div>
+						</li>
+						<li class="oddList oddFailLevel"><span>3</span></li>
+						<li class="evenList evenFailLevel"><span>2</span></li>
+						<li class="oddList evenNowLevel"><span>1</span></li>
+					</ul>
+				</div>
+				<div class="homeLoopBg">
+					<div class="homeContentLoop"></div>
+					<div class="aroundCloudLoop">
+						<div class="evenBigCloudLoop"><img src="../../images/right.png"></div>
+						<div class="leftCloudLoop"><img src="../../images/254.png" /></div>
+						<div class="rightCloudLoop"><img src="../../images/254.png" /></div>
+					</div>
+				</div> -->
+			</div>
+			<!-- 初始6关背景 -->
+			<div class="homeFixed">
+				<div class="homeContent"></div>
+				<div class="aroundCloud">
+					<div class="bigCloud"><img src="../../images/right.png" /></div>
+					<div class="rightSmallCloudTop"><img src="../../images/254.png" /></div>
+					<div class="rightSmallCloud"><img src="../../images/253.png" /></div>
+					<div class="leftSmallCloud"><img src="../../images/254.png" /></div>
+				</div>
+				<div class="cloudContent">
+					<div class="leftCloud"><img src="../../images/left.png" /></div>
+					<div class="centerCloud"><img src="../../images/center.png" /></div>
+					<div class="rightCloud"><img src="../../images/right.png" /></div>
+				</div>
+				<ul class="level-list" id="levelFixed">
+					<!-- <li class="evenFailLevel LevelPosition6"><span>6</span>
+						<div class="evenWillLevel"></div>
+						<div class="noSpecialReward"><img src="../../images/101.png" /><span>其他奖励</span></div>
+					</li>
+					<li class="oddFailLevel LevelPosition5"><span>5</span>
+						<div class="oddWillLevel"></div>
+						<div class="specialReward"><img src="../../images/101.png" /><span>其他奖励</span></div>
+					</li>
+					<li class="evenFailLevel LevelPosition4"><span>4</span>
+						<div class="levelTime">
+							<p>22分2秒</p>
+							<p><img src="../../images/97.png" />+10</p>
+						</div>
+					</li>
+					<li class="oddFailLevel LevelPosition3"><span>3</span></li>
+					<li class="evenFailLevel LevelPosition2"><span>2</span></li>
+					<li class="evenNowLevel LevelPosition1"><span>1</span></li> -->
+				</ul>
+			</div>
+		</div>
+		<!--bottom-->
+		<div class="bottom-table">
+			<ul>
+				<li>
+					<a href="../../html/homePages/home.html">
+						<div class="menu menu1">
+							<img src="../../images/89.png" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="../../html/lessonDetail/lesson-contents.html">
+						<div class="menu">
+							<img src="../../images/90.png" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="../../html/purse/purse.html">
+						<div class="menu">
+							<img src="../../images/91.png" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="../../html/personalCenter/personal-center.html">
+						<div class="menu">
+							<img src="../../images/92.png" />
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--体力值-->
+		<div class="home-shade" id="stamina-shade">
+			<div class="stamina-tips">
+				<div class="staminaClose"></div>
+				<i>-体力值-</i><br />
+				<img src="../../images/105.png" />
+				<h1 id="realStamina"><span id="ownStamina">30</span><span id="maxStamina">/30</span></h1>
+				<p>每5分钟恢复1体力值,</p>
+				<p>每次挑战使用3体力值。</p>
+			</div>
+		</div>
+		<!-- 签到 -->
+		<div class="home-shade" id="recording-shade">
+			<div class="home-recording">
+				<img src="../../images/39.png" class="signed-close" />
+				<!-- 日历 -->
+				<div class="calendar" id="calendar"></div>
+				<div class="calendar-count" id="calendar-count">
+					<p class="calendar-all">本月共签到：<span class="calendar-day"></>天</p>
+					<p class="calendar-num">获得智慧豆：<span class="calendar-beans"></span></p>
+				</div>
+				<p class="on">点击签到</p>
+			</div>
+		</div>
+		<!-- 签到成功(未获得智慧豆数) -->
+		<div class="home-shade" id="recordTips">
+			<div class="recordOver">
+				<div class="recordClose"></div>
+				<div class="recordImg"></div>
+				<div class="recordMsg">签到成功喽!</div>
+			</div>
+		</div>
+		<!-- 签到成功(获得智慧豆数) -->
+		<div class="home-shade" id="recordHasbeanTips">
+			<div class="recordHasbeans">
+				<div class="recordClose"></div>
+				<div class="recordImg"></div>
+				<div class="recordMsg">签到成功喽!</div>
+				<div class="recordBeans">
+					<img src="../../images/83.png" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!--闯关-->
+		<div class="home-shade" id="levelShade">
+			<div class="passIng">
+				<div class="level-num">
+					<div class="round left-round"></div>
+					<span id="levelNum"></span>
+					<div class="round right-round"></div>
+				</div>
+				<div class="level_btn"></div>
+				<div class="start" id="levelFirst">马上闯关</div>
+				<div class="passLevel">
+					<!-- 初次闯关 -->
+					<!-- <div class="pass-gift">
+					<div class="stamina-reward"><img src="../../images/108.png" /><span id="rewardBeans"></span></div>
+					<div class="pk-reward"><img src="../../images/107.png" /><span id="pkValue"></span></div>
+					<div class="other-gift">
+						<div class="other-giftbox">
+							<img src="../../images/109.png" />
+							<div>特殊奖励</div>
+						</div>
+					</div>
+				</div> -->
+					<!-- 再次闯关 -->
+					<!-- <div class="pass-again">
+						<img src="../../images/117.png" />
+						<p id="gateTime"></p>
+					</div> -->
+				</div>
+			</div>
+			<!--排行榜-->
+			<div class="leaderboard">
+				<i class="icon-board">-全网排名-</i>
+				<div class="board-table">
+					<ul class="board-list">
+						<!-- <li>
+							<p class="border-num">1</p>
+							<p class="border-head"><img src="../../images/111.png" /></p>
+							<p class="border-name">夏琳琳</p>
+							<p class="border-time">01:00</p>
+							<p class="border-phiz"><img src="../../images/97.png" /><span>x10</span></p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 滑到顶部 -->
+	<div class="internet-tips"></div>
+	<!-- 闯关提示 -->
+	<div class="home-tips"></div>
+	<!-- 掉线 -->
+	<div class="otherPlace">
+		<span>您已掉线,请重新登录~</span>
+		<div class="placeBtn">确定</div>
+	</div>
+	<!-- 首页广告弹窗 -->
+	<div class="homeAlert" id="homeAlert">
+		<img class="alertImg" />
+		<div class="closeAlert"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	// audio自动播放
+	document.addEventListener("WeixinJSBridgeReady", function () {
+		document.getElementById('homeBackgroud').play();
+		// document.getElementById('video').play(); 
+	}, false);
+	//ajax获取日历json数据
+	var signList = [{
+		"signDay": ''
+	}, ];
+	calUtil.init(signList);
+</script>
+
+</html>

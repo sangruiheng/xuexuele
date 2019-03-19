@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>闯关内容</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/home/levelDetail.js"></script>
+	<script src="../../js/common/audio.js"></script>
+	<script src="../../js/common/tips.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</head>
+
+<body class="index-body">
+	<section class="index-container">
+		<audio src="../../mp3/levelBackground.mp3" preload="auto" id="levelBackground" autoplay loop></audio>
+		<audio src="../../mp3/levelFail.mp3" preload="auto" id="levelFailAudio"></audio>
+		<audio src="../../mp3/answerError.mp3" preload="auto" id="answerError"></audio>
+		<audio src="../../mp3/throughLevel.mp3" preload="auto" id="goThrough"></audio>
+		<audio src="../../mp3/button.mp3" preload="auto" id="buttonMps"></audio>
+		<!-- 附加页面 -->
+		<audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+		<div class="level-back" id="levelBack"></div>
+		<div class="level-timing"><span id="time1"></span></div>
+		<div class="level-content">
+			<div class="level-num level-inner-num">
+				<div class="round leftName-round"></div>
+				<span class="level-name"></span>
+				<div class="round rightName-round"></div>
+			</div>
+			<!--关卡内容为图片 -->
+			<div class="level-topic" id="levelImg"><img class="level-img" src="" /></div>
+			<!-- 关卡内容为音频 -->
+			<div class="level-topic" id="levelAudio">
+				<div class="level-audio-content">
+					<audio id="lessonAudio"></audio>
+					<div class="progressBar">
+						<div class="progressReal"></div>
+						<i class="progressKey"></i>
+					</div>
+					<span class="successed">00:00</span>
+					<span class="unsuccessed" id="audioTime"></span>
+					<!-- 暂停 -->
+					<div class="progress-stop" id="progressBar"></div>
+				</div>
+			</div>
+			<div class="kit-image" id="kitImg"></div>
+			<div class="kit-content"></div>
+			<div class="respond-blank">
+				<ul>
+					<!-- <li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li> -->
+				</ul>
+			</div>
+			<div class="respond-key">
+				<ul>
+					<!-- <li>火</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li> -->
+				</ul>
+				<!-- 答案演示 -->
+				<div class="key-show">
+					<div class="respond-key-show"></div>
+					<div class="tipKey-show" id="keyShow"></div>
+				</div>
+			</div>
+			<!-- 答案演示 -->
+			<div class="blank-show">
+				<div class="respond-blank-show"></div>
+				<div class="tipContent-show" id="blankShow"></div>
+			</div>
+		</div>
+	</section>
+	<!--退出关卡-->
+	<div class="home-shade" id="closeLevel">
+		<div class="close-level">
+			<p>确认退出挑战?</p>
+			<div class="close-confirm" id="exitLevel">确定</div>
+			<div class="close-cancel" id="exitCancel">取消</div>
+		</div>
+	</div>
+
+	<!--点击锦囊-->
+	<div class="home-shade" id="kitShade">
+		<!--智慧豆充足-->
+		<div class="kit-havebeans">
+			<img src="../../images/39.png" class="kit-close" id="havebeansClose" />
+			<h1>-正确答案-</h1>
+			<img src="../../images/108.png" class="kit-cost" />
+			<span></span>
+			<div class="kit-view" id="kitView">立即查看</div>
+			<p></p>
+		</div>
+		<!--智慧豆不足-->
+		<div class="kit-nobeans">
+			<img src="../../images/39.png" class="kit-close" id="nobeansClose" />
+			<h1>-正确答案-</h1>
+			<img src="../../images/108.png" class="kit-cost" />
+			<span>x20</span>
+			<div class="kit-view kit-echarge">智慧豆不足,立即充值</div>
+		</div>
+	</div>
+	<!--打开锦囊-->
+	<!--3遍答案-->
+	<div class="home-shade" id="kitAnswerShade3">
+		<div class="kit-enter3">
+			<img src="../../images/39.png" class="kit-close" id="kitClose3" />
+			<h1>-正确答案-</h1>
+			<ul id="answerList3">
+				<!-- <li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+			<div class="kit-lesson3">
+				<p>—— 推荐课程 ——</p>
+				<img class="lessonbackground3">
+				<h1>课程名称课程名称课程名称课程名称课程名称</h1>
+				<div class="lesson-gifts">
+					<div class="lesson-smile"><img src="../../images/125.png" />x<span></span></div>
+					<div class="lesson-star"><img src="../../images/124.png" /><span></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--2遍答案-->
+	<div class="home-shade" id="kitAnswerShade2">
+		<div class="kit-enter2">
+			<img src="../../images/39.png" class="kit-close" id="kitClose2" />
+			<h1>-正确答案-</h1>
+			<ul id="answerList2">
+				<!-- <li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+			<div class="kit-lesson2">
+				<p>—— 推荐课程 ——</p>
+				<img class="lessonbackground2">
+				<h1>课程名称课程名称课程名称课程名称课程名称</h1>
+				<div class="lesson-gifts">
+					<div class="lesson-smile"><img src="../../images/125.png" />x<span></span></div>
+					<div class="lesson-star"><img src="../../images/124.png" /><span></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--1遍答案-->
+	<div class="home-shade" id="kitAnswerShade1">
+		<div class="kit-enter1">
+			<img src="../../images/39.png" class="kit-close" id="kitClose1" />
+			<h1>-正确答案-</h1>
+			<ul id="answerList1">
+				<!-- <li></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+			<div class="kit-lesson1">
+				<p>—— 推荐课程 ——</p>
+				<img class="lessonbackground1">
+				<h1>课程名称课程名称课程名称课程名称课程名称</h1>
+				<div class="lesson-gifts">
+					<div class="lesson-smile"><img src="../../images/125.png" />x<span></span></div>
+					<div class="lesson-star"><img src="../../images/124.png" /><span></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 初次闯关 -->
+	<div class="home-shade" id="levelPass">
+		<div class="first-pass">
+			<div class="level-num level-passed">
+				<p>恭喜您过关了！</p>
+			</div>
+			<div class="level_btn" id="passFirstClose"></div>
+			<div class="pass-gift pass-end">
+				<div class="pass-time"><img src="../../images/117.png" /><span id="passFirstTime">22:22</span></div>
+				<div class="stamina-reward stamina-end"><img src="../../images/108.png" /><span id="passStamina">x10</span></div>
+				<div class="pk-reward pk-end"><img src="../../images/107.png" /><span id="passPk">x10</span></label>
+				</div>
+			</div>
+			<div class="other-gift special-gift">
+				<div class="other-giftbox">
+					<img src="../../images/109.png" />
+					<div>特殊奖励</div>
+				</div>
+			</div>
+			<div class="next-level">下一关</div>
+			<!--排行榜-->
+			<div class="leaderboard">
+				<i class="icon-board">-全网排名-</i>
+				<div class="leaderboard">
+					<i class="icon-board">-全网排名-</i>
+					<div class="board-table">
+						<ul class="board-list">
+							<!-- <li>
+									<p class="border-num">1</p>
+									<p class="border-head"><img src="../../images/111.png" /></p>
+									<p class="border-name">夏琳琳</p>
+									<p class="border-time">01:00</p>
+									<p class="border-phiz"><img src="../../images/97.png" /><span>x10</span></p>
+								</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--再次闯关成功-->
+	<div class="home-shade" id="levelPassAgain">
+		<div class="next-pass">
+			<div class="level-num level-passed">
+				<p>恭喜您过关了！</p>
+			</div>
+			<div class="level_btn" id="passAgainClose"></div>
+			<div class="pass-again">
+				<img src="../../images/117.png" />
+				<p id="passAgainTime"></p>
+			</div>
+			<div class="next">下一关</div>
+		</div>
+		<!--排行榜-->
+		<div class="leaderboard">
+			<i class="icon-board">-全网排名-</i>
+			<div class="leaderboard">
+				<i class="icon-board">-全网排名-</i>
+				<div class="board-table">
+					<ul class="board-list">
+						<!-- <li>
+							<p class="border-num">1</p>
+							<p class="border-head"><img src="../../images/111.png" /></p>
+							<p class="border-name">夏琳琳</p>
+							<p class="border-time">01:00</p>
+							<p class="border-phiz"><img src="../../images/97.png" /><span>x10</span></p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="otherPlace">
+		<span>您已掉线,请重新登录~</span>
+		<div class="placeBtn">确定</div>
+	</div>
+	<!-- 闯关提示 -->
+	<div class="home-tips"></div>
+	<!-- 新用户演示 -->
+	<div class="level-shade1" id="contentShow">
+		<div class="level-show topic-show" id="topicShow"></div>
+		<p class="level-tips topic-tips">请仔细查看图示文字!</p>
+	</div>
+	<div class="level-shade2" id="tipContentShow">
+		<p class="level-tips tipContent-tips">根据提示条件选择答案!</p>
+	</div>
+	<div class="level-shade3" id="tipKeyShow">
+		<p class="level-tips tipKey-tips">点击删除错误内容!</p>
+	</div>
+	<!-- 关卡广告弹窗 -->
+	<div class="homeAlert" id="levelAlert">
+		<img class="alertImg" />
+		<div class="closeAlert"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	// audio自动播放
+	document.addEventListener("WeixinJSBridgeReady", function () {
+		document.getElementById('levelBackground').play();
+		// document.getElementById('video').play(); 
+	}, false);
+</script>
+
+</html>

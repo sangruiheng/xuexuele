@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>专辑详情</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/common/tips.js"></script>
+	<script src="../../js/personal/albumDetail.js"></script>
+</head>
+
+<body class="album-body">
+	<section class="album-container">
+		<!-- 点击按钮音效 -->
+		<audio src="../../mp3/button.mp3" preload="auto" id="buttonMps"></audio>
+		<!-- 附加页面 -->
+		<audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+		<i class="album-back" id="albumDetailBack"></i>
+		<span id="album-title">-专辑名称-</span>
+		<div class="album-box">
+			<div class="album-top"><img src="" /></div>
+			<p class="album-text"></p>
+			<div class="album-detail"></div>
+			<div class="lesson-title-list">
+				<!--课程名称[操作]-->
+				<!-- <div class="lesson-title">
+					<div class="list-num">5</div>
+					<div class="lesson-list-detail">
+						<div class="lessonDetail">
+							<div class="lesson-list-title">
+								<div class="lesson-list-name">课程名称</div>
+							</div>
+							<div class="lesson-list-tab">
+								<ul>
+									<li><img src="../../images/161.png" /><span>10</span></li>
+									<li><img src="../../images/162.png" /><span>08:22</span></li>
+									<li><img src="../../images/163.png" /><span>20</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="lesson-operate">操作</div>
+						<div class="lessonOperate-option">
+							<div class="operate-del"><img src="../../images/227.png" />删除</div>
+							<div class="operate-edit"><img src="../../images/228.png" />编辑</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+			<div class="course-add" id="addLesson2">新增课程</div>
+			<div class="noLesson-content">
+				<div id="no-lesson-img"><img src="../../images/234.png" /></div>
+				<p id="no-lesson-text">专辑还没有课程哦~</p>
+				<p id="no-lesson-link"><a id="noLesson">马上新增课程吧></a></p>
+				<div class="album-add lesson-add" id="addLesson1">新增课程</div>
+			</div>
+		</div>
+		<div class="lesson-shade" id="addlessonShade">
+			<div class="lesson-add-method">
+				<h1>-新增课程-</h1>
+				<div class="lesson-add-close"></div>
+				<div class="lesson-recording1"></div>
+				<label>
+					<div class="lesson-upload1"></div>
+					<input type="file" class="lesson-record"  name="recording"  style="display: none;" accept="*"/>
+				</label>
+			</div>
+		</div>
+	</section>
+	<!--删除提示框2-->
+	<div class="operate-shade" id="delTips">
+		<div class="operate-del-tips2">
+			<div class="tip-img"></div>
+			<div class="tip-text">删除成功！</div>
+		</div>
+	</div>
+	<!-- tips -->
+    <div class="reg-tips"></div>
+</body>
+
+</html>

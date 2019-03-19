@@ -1,0 +1,8335 @@
+/* common */
+
+html,
+body {
+    /* height: 100%;
+    width: 100%;
+    font-size: 13px;
+    overflow: hidden;
+    overflow-y: hidden; */
+}
+
+.index-body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(207, 228, 255, 1), rgba(237, 254, 255, 1), rgba(48, 116, 255, 1));
+}
+
+.adPage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.startImg {
+    width: 100%;
+    height: 100%;
+}
+
+.countTime {
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 29rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, .1);
+    border-radius: .8rem;
+    position: absolute;
+}
+
+.home-body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.homeAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+}
+
+.closeAlert {
+    position: absolute;
+    bottom: 16%;
+    right: 19rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.alertImg {
+    position: absolute;
+    left: 7.2rem;
+    top: 20%;
+    width: 27rem;
+    height: 30rem;
+}
+
+.index-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.lesson-index-body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(207, 228, 255, 1), rgba(237, 254, 255, 1), rgba(48, 116, 255, 1));
+}
+
+.lesson-index-container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.lessonShare-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 首页 */
+
+.container-1 {
+    background: url("../images/01.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.img-wrapper {
+    position: absolute;
+    z-index: 100;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-01 {
+    width: 15.75rem;
+    top: 0;
+    right: 0;
+}
+
+.wrapper-02 {
+    width: 24.57rem;
+    top: 0;
+    left: 0;
+}
+
+.wrapper-03 {
+    width: 27.37rem;
+    top: 5.7rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.wrapper-04 {
+    width: 34.59rem;
+    top: 8.7rem;
+    left: 1.8rem;
+}
+
+.wrapper-05 {
+    width: 35.44rem;
+    top: 9.6rem;
+    left: 1.4rem;
+}
+
+.wrapper-06 {
+    width: 36.55rem;
+    top: 8.7rem;
+    right: 0.1rem;
+}
+
+.index-process-wrapper {
+    position: absolute;
+    width: 25.05rem;
+    margin: 0 auto;
+    background: url("../images/08.png") no-repeat center;
+    background-size: 100% 100%;
+    left: 0;
+    right: 0;
+    top: 26.5rem;
+    height: 2.3rem;
+    z-index: 10000;
+    box-sizing: border-box;
+    padding: .15rem .5rem .4rem;
+}
+
+.index-process-wrapper>.index-process-bar {
+    -webkit-appearance: none;
+    background: none;
+    width: 24rem;
+    height: 86%;
+    margin-top: 1.3%;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.index-process-wrapper ::-webkit-progress-inner-element {}
+
+.index-process-wrapper ::-webkit-progress-bar {
+    background: transparent;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.index-process-wrapper ::-webkit-progress-value {
+    background: url("../images/09.jpg") repeat-x center;
+    background-size: auto 100%;
+    border-radius: 1rem;
+}
+
+.index-process-wrapper>.loading {
+    position: absolute;
+    top: 50%;
+    margin-top: -2.3rem;
+}
+
+.index-process-wrapper>.loading>img {
+    display: inline-block;
+    width: 4rem;
+    height: 4.3rem;
+}
+
+.index-process-wrapper>.loading>h1 {
+    margin-top: -72%;
+    margin-left: -9rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* 登录 */
+
+.login-container,
+.repwd-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-wrapper,
+.rewpd-wrapper {
+    width: 100%;
+    height: 40.5rem;
+    position: absolute;
+    top: 19.5rem;
+    left: 0;
+    background: url("../images/10.png") repeat-x center;
+    background-size: 100% 100%;
+    padding: 12.5rem 4.5rem 4.1rem;
+}
+
+.login-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1.9rem 1.05rem 0;
+}
+
+.rewpd-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0.9rem 1.05rem 0;
+}
+
+.reg-second {
+    padding: .1rem 1.05rem 0;
+}
+
+.login-content>h1,
+.rewpd-content>h1 {
+    position: absolute;
+    left: 0;
+    top: -3.2rem;
+    width: 100%;
+    height: 2rem;
+    background: url("../images/15.jpg") no-repeat center;
+    background-size: 6.1rem 2rem;
+}
+
+.login-input-wrapper {
+    height: 5rem;
+    background: url("../images/14.png") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.login-focus {
+    background: url("../images/14-1.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.login-input-wrapper>input {
+    width: 100%;
+    height: 4.8rem;
+    padding-left: 5.9rem;
+    padding-right: 2rem;
+}
+
+.login-input-wrapper>input::placeholder {
+    color: #956826;
+}
+
+.login-input-wrapper.input-1>input {
+    background: transparent url("../images/12.png") no-repeat 1.7rem center;
+    background-size: 2rem 2rem;
+}
+
+.login-input-wrapper.input-2>input {
+    background: transparent url("../images/13.png") no-repeat 1.7rem center;
+    background-size: 2rem 2rem;
+}
+
+.login-input-wrapper>i {
+    position: absolute;
+    width: 0.2rem;
+    height: 1.5rem;
+    background: #956826;
+    left: 4.5rem;
+    top: 50%;
+    margin-top: -0.7rem;
+}
+
+.login-input-wrapper.input-2 {
+    margin-top: 1.4rem;
+}
+
+.login-btn {
+    background: url("../images/11.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.login-btn>i {
+    display: block;
+    width: 3.9rem;
+    height: 2rem;
+    margin: 0 auto;
+    background: url("../images/16.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.login-link:after,
+.repwd-code:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.login-link {
+    font-size: 1.2rem;
+    color: #CA9A53;
+    padding: 0 2rem;
+    margin-top: 1.1rem;
+}
+
+.login-link>a {
+    float: left;
+}
+
+.login-link>h1 {
+    float: right;
+}
+
+.login-link>h1>a {
+    color: #6DBD2C;
+}
+
+/* 忘记密码 */
+
+.page-back,
+.reg-back,
+.level-back {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/19.png") no-repeat center;
+    background-size: 100% 100%;
+    top: 1.8rem;
+    left: 1.7rem;
+    z-index: 9999;
+}
+
+.page-back1 {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/19.png") no-repeat center;
+    background-size: 100% 100%;
+    top: 1.3rem;
+    left: 1.3rem;
+    z-index: 9999;
+}
+
+.rewpd-content>h1 {
+    background: url("../images/22.jpg") no-repeat center;
+    background-size: 9.7rem 2.1rem;
+}
+
+.rewpd-content>h2 {
+    font-size: 1.1rem;
+    color: #CA9A53;
+    padding-bottom: .6rem;
+    padding-left: 1.4rem;
+}
+
+.repwd-btn {
+    background: url("../images/11.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 5.05rem;
+    margin-top: .9rem;
+    padding-top: 1.55rem;
+}
+
+.reg-secBtn {
+    margin-top: .5rem;
+}
+
+.repwd-btn>i {
+    display: block;
+    width: 5.6rem;
+    height: 2.1rem;
+    margin: 0 auto;
+    background: url("../images/23.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.repwd-code {
+    padding-top: 1.5rem;
+}
+
+.repwd-code>div {
+    float: left;
+    width: 65.02057%;
+}
+
+.codeBtn,
+.recodeBtn {
+    float: right;
+    margin-top: .2rem;
+    margin-right: .5rem;
+    width: 8.25rem;
+    height: 4.8rem;
+    line-height: 4.6rem;
+    text-align: center;
+    background: url(../images/257.png) no-repeat;
+    border-radius: 1rem;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.codeDisable {
+    margin-top: .5rem;
+    margin-right: .5rem;
+    line-height: 4.2rem;
+    width: 8rem;
+    height: 4.2rem;
+    background: #B0B0B0;
+}
+
+.repwd-code>.input-3>input {
+    background: transparent url("../images/24.png") no-repeat 1.7rem center;
+    background-size: 2rem 2rem;
+}
+
+/*  忘记密码-第二步 */
+
+.repwd-next {
+    padding-top: .3rem;
+}
+
+.repwd-next>h2 {
+    font-size: 1.1rem;
+    color: #CA9A53;
+    line-height: 1.7rem;
+    margin-top: -.1rem;
+}
+
+.repwd-next>.repwd-btn {
+    margin-top: .3rem;
+}
+
+/* 注册账号 */
+
+.reg-content>h1 {
+    background: url("../images/32.jpg") no-repeat center;
+    background-size: 9.2rem 2.1rem;
+}
+
+.reg-agreement {
+    padding-top: 1.1rem;
+}
+
+.reg-agreement>h1 {
+    font-size: 1.1rem;
+    color: #CA9A53;
+    padding-left: .8rem;
+}
+
+.reg-agreement>h1>a {
+    color: #6EBD2C;
+}
+
+.reg-next .repwd-btn {
+    margin-top: .3rem;
+}
+
+/* 注册账号-第三步 */
+
+.reg-end-container {
+    position: absolute;
+    top: 4.1rem;
+    left: 0;
+    z-index: 150;
+    width: 100%;
+    height: 59.5rem;
+    background: url("../images/25.png") no-repeat center;
+    background-size: 100% 100%;
+    padding: 6.8rem 4.5rem 4.4rem;
+}
+
+.reg-end-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.reg-end-content>h1 {
+    position: absolute;
+    left: 0;
+    top: -3.2rem;
+    width: 100%;
+    height: 2.1rem;
+    background: url("../images/32.jpg") no-repeat center;
+    background-size: 9.7rem 2.1rem;
+}
+
+.reg-end-list>li:after,
+.realname-list>li:after,
+.personal-list>li:after,
+.personal-setting-list>li:after,
+.album-add-list>li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.reg-end-list,
+.realname-list,
+.personal-list,
+.personal-setting-list,
+.album-add-list {
+    padding: 0 1.5rem;
+}
+
+.reg-end-list>li,
+.realname-list>li,
+.personal-list>li,
+.personal-setting-list>li,
+.album-add-list>li {
+    height: 5.4rem;
+    border-bottom: .1rem solid #CFA972;
+    border-color: rgba(229, 194, 138, 0.5);
+    line-height: 2rem;
+    padding-top: 1.6rem;
+    background: url("../images/30.png") no-repeat right center;
+    background-size: .7rem 1.2rem;
+}
+
+.reg-end-list>li>h1,
+.realname-list>li>h1,
+.personal-list>li>h1,
+.personal-setting-list>li>h1,
+.album-add-list>li>h1 {
+    font-size: 1.5rem;
+    color: #956826;
+    float: left;
+}
+
+.reg-end-list>li>p,
+.realname-list>li>p,
+.personal-list>li>p,
+.personal-setting-list>li>p {
+    font-size: 1.4rem;
+    color: #956826;
+    float: right;
+    padding-right: 1.1rem;
+}
+
+.realname-list>li>p>input {
+    background-color: rgba(255, 247, 223, 0.2);
+    text-align: right;
+    color: #956826;
+    margin-top: .2rem;
+}
+
+.realname-list>li>p>input::-webkit-input-placeholder {
+    color: #956826;
+}
+
+.realname-list>li>p,
+.personal-list>li>p,
+.personal-setting-list>li>p {
+    color: #956826;
+}
+
+.reg-end-btn {
+    margin: 1.6rem 2.3rem 0;
+    height: 5rem;
+    background: url("../images/11.png") no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 1.4rem;
+}
+
+.reg-end-btn>i {
+    display: block;
+    margin: 0 auto;
+    width: 7.4rem;
+    height: 2.1rem;
+    background: url("../images/33.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.reg-end-list>li.head-pic {
+    padding-top: .3rem;
+}
+
+.reg-end-list>li.head-pic>h1 {
+    margin-top: 1.3rem;
+}
+
+.reg-end-list>li.head-pic>div {
+    float: right;
+    width: 12rem;
+    height: 4.8rem;
+    margin-right: 1.1rem;
+    background: url("../images/111.png") no-repeat right center;
+    background-size: 4.8rem 4.8rem;
+    padding-right: 5.4rem;
+    font-size: 1.4rem;
+    color: #956826;
+    line-height: 4.8rem;
+}
+
+.reg-end-list>li.head-pic>div>img {
+    position: absolute;
+    top: 7.5rem;
+    right: 3rem;
+    width: 4rem, ;
+    height: 4rem;
+    border-radius: .5rem;
+}
+
+.reg-end-list>li.head-pic>input {
+    float: right;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-right: 1.1rem;
+    padding-right: 5.4rem;
+}
+
+.reg-end-list>li>p>input {
+    background-color: rgba(255, 247, 223, 0.2);
+    text-align: right;
+    color: #956826;
+    margin-top: .2rem;
+}
+
+.reg-end-list>li>p>input::-webkit-input-placeholder {
+    color: #956826;
+}
+
+.personal-list>li>p>input {
+    background-color: rgba(255, 247, 223, 0.2);
+    text-align: right;
+    color: #956826;
+    margin-top: .25rem;
+}
+
+.personal-list>li>p>input::-webkit-input-placeholder {
+    color: #956826;
+}
+
+.reg-end-list>li.role,
+.personal-setting-list>li.role {
+    height: 6.8rem;
+    background: none;
+    padding-top: 0;
+}
+
+.reg-end-list>li.role>h1,
+.personal-setting-list>li.role>h1 {
+    padding-top: 2.4rem;
+}
+
+.reg-end-list>li.role>div,
+.personal-setting-list>li.role>div {
+    float: right;
+    overflow: hidden;
+    height: 6.8rem;
+    padding-right: .9rem;
+    padding-top: 1.7rem;
+}
+
+.reg-end-list>li.role>div>p,
+.personal-setting-list>li.role>div>p {
+    float: right;
+    position: relative;
+    width: 5.5rem;
+    height: 3.5rem;
+}
+
+.reg-end-list>li.role>div>p.p1,
+.personal-setting-list>li.role>div>p.p1 {
+    background: url("../images/27.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.reg-end-list>li.role>div>p.p2,
+.personal-setting-list>li.role>div>p.p2 {
+    background: url("../images/26.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-left: 1.4rem;
+}
+
+.reg-end-list>li.role>div>p>i,
+.personal-setting-list>li.role>div>p>i {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.4rem;
+    right: -1rem;
+    bottom: -.7rem;
+    background: url("../images/28.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.reg-end-list>li.role>div>p>i.checked,
+.personal-setting-list>li.role>div>p>i.checked {
+    background: url("../images/29.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+/* 用户协议 */
+
+.agreement-body,
+.letter-body,
+.letter-infor {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(to top, rgba(148, 193, 70, 1), rgba(203, 232, 229, 1));
+}
+
+.album-introduction-body,
+.addLesson-introduction,
+.addLesson-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(148, 193, 70, 1), rgba(203, 232, 229, 1));
+}
+
+.agreement-container,
+.letter-container,
+.album-introduction-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/34.png") no-repeat center 2.53333vw;
+    background-size: 95.6% 95.57721%;
+    padding: .95rem .825rem;
+    overflow: hidden;
+}
+
+.agreement-content,
+.letter-content,
+.treasureBox-content,
+.personal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2.735rem .825rem 0;
+}
+
+.agreement-wrapper,
+.letter-wrapper {
+    top: 2.2rem;
+    width: 100%;
+    height: 86%;
+    position: relative;
+    padding: 1.5341rem 1.247rem;
+    overflow: auto;
+}
+
+.treasureBox-wrapper {
+    top: 7.67rem;
+    width: 100%;
+    height: 83%;
+    position: relative;
+    overflow: auto;
+}
+
+.agreement-container>h1 {
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    width: 100%;
+}
+
+.agreement-container>h1>i {
+    display: block;
+    margin: 0 auto;
+    width: 9.7rem;
+    height: 2.1rem;
+    background: url("../images/35.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.agreement-wrapper>p {
+    font-size: 1.3rem;
+    color: #956826;
+    line-height: 1.9rem;
+    margin-top: 1.5rem;
+}
+
+/* 首页 */
+
+.container-home {
+    width: 100%;
+}
+
+.homePageBg {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.homeCloudContent {
+    position: absolute;
+    width: 100%;
+    height: 9.8rem;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.homeLeftCloud>img,
+.homeCenterCloud>img,
+.homeRightCloud>img {
+    position: absolute;
+}
+
+/* 循环部分 */
+
+.homeLoop {
+    background: #3074FF;
+}
+
+.homeLoopBg {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: -16.6rem;
+    width: 100%;
+    height: 69.4rem;
+    z-index: 500;
+}
+
+.homeContentLoop {
+    position: absolute;
+    margin-left: 9.89875rem;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 500;
+    background: url(../images/251.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 遍历部分的云朵 */
+
+.aroundCloudLoop {
+    width: 100%;
+    height: 60.56rem;
+    z-index: 500;
+}
+
+.leftCloudLoop {
+    position: absolute;
+    bottom: 24.975rem;
+    left: 0;
+    width: 13.2rem;
+    height: 5.25rem;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.leftCloudLoop>img {
+    width: 13.2rem;
+}
+
+.rightCloudLoop {
+    position: absolute;
+    bottom: 48.5546rem;
+    right: 0;
+    width: 7.05rem;
+    height: 5.25rem;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.rightCloudLoop>img {
+    width: 13.5rem;
+}
+
+.oddBigCloudLoop {
+    position: absolute;
+    bottom: 37.9rem;
+    left: 0;
+    width: 14.5rem;
+    height: 8.25rem;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.oddBigCloudLoop>img {
+    position: absolute;
+    right: 0;
+    width: 17.4rem;
+}
+
+.evenBigCloudLoop {
+    position: absolute;
+    bottom: 34.9rem;
+    right: 0;
+    width: 14.5rem;
+    height: 8.25rem;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.evenBigCloudLoop>img {
+    position: absolute;
+    width: 17.4rem;
+}
+
+/* 固定部分 */
+
+.homeFixed {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 83.6rem;
+    background: linear-gradient(0deg, rgba(207, 228, 255, 1) 0%, rgba(237, 254, 255, 1) 40%, rgba(48, 116, 255, 1) 50%);
+}
+
+.homeContent {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 83.6rem;
+    background: url(../images/36.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 500;
+}
+
+.cloudContent1 {
+    position: absolute;
+    top: -3rem;
+    left: -12.67875rem;
+    width: 40.5rem;
+    height: 8.8rem;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.cloudContent {
+    position: absolute;
+    top: -4rem;
+    left: -0;
+    width: 42.5rem;
+    height: 9.8rem;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+.leftCloud {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 21.7rem;
+    height: 9.8rem;
+}
+
+.leftCloud>img {
+    position: absolute;
+    left: -1.376rem;
+    width: 20.6rem;
+}
+
+.centerCloud {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    top: 0;
+    left: 9.349rem;
+    width: 21.7rem;
+    height: 9.8rem;
+}
+
+.centerCloud>img {
+    position: absolute;
+    width: 21.7rem;
+}
+
+.rightCloud {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    top: 0;
+    left: 21.74rem;
+    width: 21.7rem;
+    height: 9.8rem;
+}
+
+.rightCloud>img {
+    position: absolute;
+    right: 0.124rem;
+    width: 21.7rem;
+}
+
+.moveLeft {
+    animation: moveleft 5s;
+    -moz-animation: moveleft 5s;
+    /* Firefox */
+    -webkit-animation: moveleft 5s;
+    /* Safari and Chrome */
+    -o-animation: moveleft 5s;
+    /* Opera */
+}
+
+@keyframes moveleft {
+    form {
+        left: 9.35rem;
+        opacity: 1;
+    }
+
+    to {
+        left: -20.55rem;
+        opacity: 0;
+    }
+}
+
+.moveRight {
+    animation: moveright 5s;
+    -moz-animation: moveright 5s;
+    /* Firefox */
+    -webkit-animation: moveright 5s;
+    /* Safari and Chrome */
+    -o-animation: moveright 5s;
+    /* Opera */
+}
+
+@keyframes moveright {
+    form {
+        left: 20.55rem;
+        opacity: 1;
+    }
+
+    to {
+        left: 41.1rem;
+        opacity: 0;
+    }
+}
+
+/* 固定部分周围的云 */
+
+.bigCloud {
+    position: absolute;
+    bottom: 50.916rem;
+    right: 0;
+    width: 14.5rem;
+    height: 8.25rem;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.bigCloud>img {
+    position: absolute;
+    width: 17.4rem;
+}
+
+.rightSmallCloud {
+    position: absolute;
+    bottom: 28.7rem;
+    right: 0;
+    width: 7.05rem;
+    height: 5.25rem;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.rightSmallCloudTop {
+    position: absolute;
+    bottom: 68.3028rem;
+    right: 0;
+    width: 7.05rem;
+    height: 5.25rem;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.rightSmallCloud>img,
+.rightSmallCloudTop>img {
+    width: 13.2rem;
+}
+
+.leftSmallCloud {
+    position: absolute;
+    bottom: 39.2683rem;
+    left: 0;
+    width: 13.2rem;
+    height: 6.25rem;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.leftSmallCloud>img {
+    width: 13.2rem;
+}
+
+/*遮罩层*/
+
+.reg-shade,
+.realname-shade,
+.personal-shade,
+.operate-shade,
+.beans-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.level-shade1,
+.level-shade2,
+.level-shade3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.home-shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.lesson-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.cropper-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.cropper-box>img {
+    width: 100%;
+    height: 100%;
+}
+
+.cropper-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 10000;
+    display: none;
+}
+
+.reg-tips {
+    position: absolute;
+    width: 29.25rem;
+    height: 12.69rem;
+    background: url("../images/250.png")no-repeat center;
+    background-size: 100% 100%;
+    top: 22.17rem;
+    left: 6.5rem;
+    z-index: 99999;
+    font-size: 1.3rem;
+    display: none;
+    text-align: center;
+    line-height: 12.69rem;
+}
+
+/* 智慧塔提示框 */
+
+.home-tips {
+    position: fixed;
+    width: 27.25rem;
+    height: 12.7rem;
+    background: url("../images/250.png")no-repeat center;
+    background-size: 100% 100%;
+    top: 22.17rem;
+    left: 6.5rem;
+    z-index: 99999;
+    display: none;
+    text-align: center;
+    line-height: 12.68634rem;
+    font-size: 1.2rem
+}
+
+/*头像,性别选择背景*/
+
+.avatar,
+.gender,
+.report {
+    position: absolute;
+    z-index: 330;
+    bottom: 0;
+    width: 100%;
+    height: 20.3rem;
+    background: url(../images/38.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.avatar-cut {
+    position: absolute;
+    top: 15.668rem;
+    height: 33.5rem;
+    width: 100%;
+}
+
+.avatar-cut>img {
+    width: 100%;
+    height: 33.5rem;
+}
+
+.img-cut-btn {
+    position: absolute;
+    bottom: 7.07rem;
+    width: 9.75rem;
+    height: 4.05rem;
+    background: url(../images/119.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.05rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(126, 126, 126, 1);
+}
+
+.img-cut-btn1 {
+    position: absolute;
+    left: 7.557rem
+}
+
+.img-cut-btn2 {
+    position: absolute;
+    right: 7.557rem;
+}
+
+.img-cut-btn3 {
+    width: 9.75rem;
+    height: 4.05rem;
+    background: url(../images/118.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*星座选择背景*/
+
+.constellation {
+    position: absolute;
+    z-index: 330;
+    /* top: 28.014rem; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 38.62rem;
+    background: url(../images/47.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+/*图片选择*/
+
+.avatar_model {
+    position: absolute;
+    z-index: 350;
+    display: inline-block;
+    width: 100%;
+    padding-left: 7.55rem;
+    padding-right: 7.55rem;
+}
+
+.avatar_model label {
+    display: inline;
+}
+
+.img1 {
+    margin-top: 8rem;
+    float: left;
+    width: 8.4rem;
+    height: 8.4rem;
+    background: url(../images/40-1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.img1-photo {
+    width: 8.4rem;
+    height: 8.4rem;
+    background: url(../images/40-2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.img2 {
+    margin-top: 8rem;
+    float: right;
+    width: 8.4rem;
+    height: 8.4rem;
+    background: url(../images/41-1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.img2-picture {
+    width: 8.4rem;
+    height: 8.4rem;
+    background: url(../images/41-2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*关闭按钮*/
+
+.gender_btn2,
+.constellation_btn2,
+.birthday_btn2 {
+    position: absolute;
+    z-index: 350;
+    top: 1.5rem;
+    right: 6.5rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.avatar_btn,
+.leave-message-close,
+.appraise-close,
+.tutor-close,
+.lesson-close,
+.report-btn {
+    position: absolute;
+    z-index: 350;
+    top: 1.5rem;
+    right: .45rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*星座,生日确认按钮*/
+
+.constellation_btn1,
+.birthday_btn1,
+.gender_btn1 {
+    position: absolute;
+    z-index: 350;
+    top: 1.5rem;
+    right: .45rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/42.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*性别选择*/
+
+.gender_model {
+    position: absolute;
+    z-index: 350;
+    width: 100%;
+    display: inline-block;
+    padding-left: 3.2rem;
+}
+
+.gender_table {
+    position: absolute;
+    top: 6.27rem;
+    text-align: center;
+    font-family: 'microsoft yahei';
+    font-size: 1.7rem;
+    color: #A8B0BB;
+}
+
+#gender_list img {
+    margin: 2.3rem 1.5rem 0 .5rem;
+    width: 6.3rem;
+    height: 6.3rem;
+}
+
+.gender_text {
+    color: #68A645;
+}
+
+/*星座选择*/
+
+.constellation_tr img {
+    margin: .834rem .9rem 0 .9rem;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.constellation_text {
+    color: #956826;
+}
+
+.constellation_model {
+    position: absolute;
+    z-index: 350;
+    width: 100%;
+    display: inline-block;
+    padding-left: 1.24rem;
+}
+
+.constellation_table {
+    position: absolute;
+    text-align: center;
+    top: 5.8rem;
+    left: 3.0rem;
+    font-family: 'microsoft yahei';
+    font-size: 1.7rem;
+    color: #AFAFAF;
+}
+
+/*地区选择*/
+
+.album-body,
+.series-body,
+.purse-body,
+.manage-body,
+.album-add-body {
+    width: 100%;
+    height: 100%;
+    background: #30A007;
+    overflow: hidden;
+}
+
+.area-body {
+    position: absolute;
+    background: #30A007;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.area-container,
+.album-container,
+.series-container,
+.purse-container,
+.manage-container,
+.album-add-container,
+.albumName-container,
+.addLesson-container {
+    position: relative;
+    top: .5rem;
+    left: .6rem;
+    width: 97%;
+    height: 98.5%;
+    background: #A8D535;
+    border-radius: 3%;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.area-box1,
+.album-box,
+.series-box,
+.manage-box,
+.addLesson-box,
+.addLessonCover-box {
+    position: relative;
+    width: 38.5rem;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+}
+
+.realname-box1 {
+    position: relative;
+    width: 34.5rem;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+}
+
+.realname-box {
+    position: relative;
+    width: 38.5rem;
+    height: 89.66%;
+    top: 4.9rem;
+    left: .85rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+}
+
+.album-add-box {
+    position: absolute;
+    width: 95%;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.recharge-box {
+    position: relative;
+    width: 95%;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.personal-box {
+    position: relative;
+    width: 95%;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1.1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+}
+
+.area-box2 {
+    position: relative;
+    width: 38.5rem;
+    height: 89.655%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+    display: none;
+}
+
+.album-back,
+.album-add-back,
+.albumName-back,
+.albumCover-back,
+.series-back,
+.purse-back,
+.personal-back,
+.realname-back,
+.personal-goback,
+.manage-back,
+.lesson-record-back,
+.addLesson-back,
+.addLessonCover-back {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/19.png") no-repeat center;
+    background-size: 100% 100%;
+    top: .6rem;
+    left: .814rem;
+    z-index: 9999;
+}
+
+.albumIntroduct-back,
+.addLessonIntroduct-back,
+.addLessonText-back {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/19.png") no-repeat center;
+    background-size: 100% 100%;
+    top: 1.6rem;
+    left: 1.5rem;
+    z-index: 9999;
+}
+
+.treasurebox-back,
+.attention-goback,
+.mylesson-goback {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/213.png") no-repeat center;
+    background-size: 100% 100%;
+    top: 1.6rem;
+    left: 1.5rem;
+    z-index: 9999;
+}
+
+.personal-changeback,
+.realname-back1,
+.realname-back2 {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/213.png") no-repeat center;
+    background-size: 100% 100%;
+    top: 1.3rem;
+    left: 1.3rem;
+    z-index: 9999;
+}
+
+.area-back {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/19.png") no-repeat center;
+    background-size: 100% 100%;
+    top: -4.4rem;
+    left: -.3rem;
+    z-index: 9999;
+}
+
+#area-title,
+#album-title,
+#series-title,
+#purse-title,
+#manage-title,
+#album-add-title,
+#addLesson-title,
+#addLessonCover-title {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1.75rem;
+    top: 1.55rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+
+}
+
+#realName,
+#realname-title,
+.present-top {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1.75rem;
+    top: 1.55rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(239, 90, 20, 0.75), -1px 2px 2px rgba(239, 90, 20, 0.75), 0px 2px 2px rgba(239, 90, 20, 0.75), 0px -2px 2px rgba(239, 90, 20, 0.75);
+}
+
+#personal-top {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1.75rem;
+    top: 1.55rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(197, 128, 6, 0.75), -1px 2px 2px rgba(197, 128, 6, 0.75), 0px 2px 2px rgba(197, 128, 6, 0.75), 0px -2px 2px rgba(197, 128, 6, 0.75);
+}
+
+#purseTitle {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1.75rem;
+    top: 1.55rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+.city-box {
+    position: absolute;
+    height: 2.668rem;
+    padding: 0 .45rem;
+    top: 2rem;
+    text-align: center;
+    line-height: 2.8rem;
+    font-family: MicrosoftYaHei;
+    color: #956826;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.city-in {
+    left: 5.05rem;
+}
+
+.city-out {
+    right: 4.65rem
+}
+
+.city-on {
+    opacity: 1;
+    border-bottom: .25rem solid #956826;
+}
+
+.city-line {
+    position: absolute;
+    width: 36.5rem;
+    height: .1rem;
+    background: #956826;
+    opacity: 0.5;
+    top: 4.55rem;
+    left: 1rem;
+}
+
+.city-search1 {
+    position: absolute;
+    width: 35.549rem;
+    height: 3.548rem;
+    left: 1.45rem;
+    top: 5.85rem;
+    background: url(../images/61.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.city-search2 {
+    position: absolute;
+    width: 24.67rem;
+    height: 3.548rem;
+    left: 3.35rem;
+    top: 1.75rem;
+    background: url(../images/64.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+#search-picture1 {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1.05rem;
+    left: 13.25rem;
+    background: url(../images/62.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+#search-picture2 {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1.05rem;
+    left: 1.3rem;
+    background: url(../images/62.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+#search-close {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1.05rem;
+    left: 21rem;
+    background: url(../images/66.png) no-repeat center;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.search-list {
+    position: relative;
+    top: 5rem;
+    left: 3.6875rem;
+    width: 24rem;
+    font-size: 1.2rem;
+    max-height: 53.36rem;
+    overflow: hidden;
+}
+
+.search-list>ul>li {
+    position: relative;
+    background: #FFFFFF;
+    width: 24rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: .1rem solid rgba(149, 104, 38, 0.5);
+    padding: 0 .56rem;
+}
+
+.tel-close,
+.code-close {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1.75rem;
+    right: 1.425rem;
+    background: url(../images/66.png) no-repeat center;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#search-text1 {
+    position: absolute;
+    top: 1.05rem;
+    left: 16.25rem;
+    font-size: 1.3rem;
+    color: #D9AC6A;
+    background: none;
+}
+
+#search-text1::-webkit-input-placeholder,
+#search-text2::-webkit-input-placeholder {
+    color: #D9AC6A;
+}
+
+#search-text2 {
+    position: absolute;
+    top: 1.05rem;
+    left: 3.25rem;
+    font-size: 1.3rem;
+    color: #D9AC6A;
+    background: none;
+}
+
+.city-search-btn {
+    position: absolute;
+    width: 6.65rem;
+    height: 3.4rem;
+    left: 29.3rem;
+    top: 1.95rem;
+    background: url(../images/65.png) no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 3.4rem;
+    font-size: 1.3rem;
+    color: #FFFFFE;
+}
+
+.city-text {
+    position: absolute;
+    width: 35.5rem;
+    height: 48rem;
+    top: 9.4rem;
+    left: 1.45rem;
+    overflow: auto;
+}
+
+.city-text ul {
+    font-family: MicrosoftYaHei;
+    color: #222222;
+    line-height: 4.2rem;
+}
+
+.city-text ul>p {
+    font-size: 1.5rem;
+}
+
+.city-text ul>li {
+    height: 4.35rem;
+    font-size: 1.4rem;
+    width: 28.75rem;
+    line-height: 4.35rem;
+}
+
+.city-text ul>hr {
+    border: .1rem solid #956826;
+    opacity: 0.2;
+}
+
+.city-initials {
+    position: absolute;
+    top: 9.9rem;
+    right: 1.75rem;
+    text-align: center;
+    background: #956826;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 1.2rem;
+}
+
+.city-checked {
+    color: #76C519;
+    font-size: 1.2rem;
+}
+
+.city-international {
+    display: none;
+}
+
+#inter-picture {
+    position: absolute;
+    width: 12.7rem;
+    height: 12.7rem;
+    top: 14.95rem;
+    left: 12.5rem;
+    background: url(../images/63.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+#inter-text,
+#infor-text {
+    position: absolute;
+    text-align: center;
+    top: 29.2rem;
+    left: 10.5rem;
+    width: 16.3rem;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+#attentionText {
+    position: absolute;
+    text-align: center;
+    top: 32.5rem;
+    left: 9.8rem;
+    width: 16.3rem;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+#inter-text>p {
+    font-size: 1.2rem;
+}
+
+.search-text {
+    position: absolute;
+    width: 31.2rem;
+    height: 49rem;
+    top: 6.73rem;
+    left: 1.6875rem;
+    overflow: auto;
+}
+
+.search-res {
+    height: 3rem;
+    border-bottom: .1rem rgba(149, 104, 38, .2) solid;
+    margin: .56rem;
+    font-size: 1.5rem;
+}
+
+/*站内信*/
+
+.letter-infor-wrapper {
+    top: 2.2rem;
+    width: 100%;
+    height: 86%;
+    position: relative;
+    padding: 1.534rem 1.25rem;
+    overflow: auto;
+    text-align: center;
+    color: #553208;
+    line-height: 1.8rem;
+}
+
+.letter-infor-wrapper>h1,
+.letter-infor-wrapper>h3,
+.letter-infor-wrapper>p {
+    margin-bottom: .57rem;
+}
+
+.letter-infor-wrapper>h1 {
+    font-size: 1.5rem;
+}
+
+.letter-infor-wrapper>h3 {
+    font-size: 1.3rem;
+}
+
+.letter-infor-wrapper>p {
+    text-align: left;
+    text-indent: 2em;
+    font-size: 1.4rem;
+}
+
+.treasureBox-audio {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.treasureBox-audio>h1 {
+    position: absolute;
+    top: 2.535rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    z-index: 350;
+}
+
+.treasureBox-content>h1 {
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    z-index: 350;
+    text-shadow: 1px 1px 2px #DB7E1C, -1px 1px 2px #DB7E1C, 0px 1px 2px #DB7E1C, 0px -1px 2px #DB7E1C;
+}
+
+.letter-content>h1 {
+    position: absolute;
+    top: 1.334rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.mailbox {
+    position: absolute;
+    right: .85rem;
+    bottom: 1rem;
+    width: 6.85rem;
+    height: 6.65rem;
+    background: url(../images/67.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.treasureBox-gift {
+    width: 34rem;
+    height: 6.74rem;
+    background: #F8E8B0;
+    border-radius: 1rem;
+    color: #553208;
+    margin: 1.16rem 1.94rem;
+}
+
+.noletter,
+.nogift,
+.not-support {
+    display: none;
+}
+
+.noletter-result {
+    position: absolute;
+    width: 12.75rem;
+    height: 12.7rem;
+    top: 17.7rem;
+    left: 12.75rem;
+    background: url(../images/70.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.noletter-text,
+.not-support-text {
+    position: absolute;
+    text-align: center;
+    top: 32rem;
+    left: 11rem;
+    width: 16.3rem;
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+.nogift-text {
+    position: absolute;
+    text-align: center;
+    top: 34.66rem;
+    left: 12.0rem;
+    width: 16.3rem;
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+/*百宝箱*/
+.treasureBox-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(238, 197, 105, 1) 0%, rgba(203, 232, 229, 1) 100%);
+}
+
+/*课程详情*/
+.lesson-detail-body {
+    width: 100%;
+    height: 100% !important;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(238, 197, 105, 1) 0%, rgba(203, 232, 229, 1) 100%);
+}
+
+#treasureBoxAudioBg {
+    width: 100%;
+    height: 100%;
+}
+
+#lessonBackground {
+    width: 100%;
+    height: 66.7rem;
+}
+
+.treasureBox-container,
+.attention-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../images/71.png) no-repeat center 2.53333vw;
+    background-size: 95.6% 95.57721%;
+    padding: .95rem .825rem;
+    overflow: hidden;
+}
+
+.personal-introduct {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../images/71.png) no-repeat center 2.53333vw;
+    background-size: 95.6% 95.57721%;
+    padding: .95rem .825rem;
+    display: none;
+}
+
+.articleGift {
+    width: 8.2rem;
+    height: 6.8rem;
+    background: url(../images/72.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.musicGift {
+    width: 8.2rem;
+    height: 6.8rem;
+    background: url(../images/73.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.treasureBox-gift>li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: #553208;
+    line-height: 3.9rem;
+}
+
+.treasureBox-gift>p {
+    font-size: 1.3rem;
+}
+
+.nogift-result {
+    position: absolute;
+    width: 12.75rem;
+    height: 12.7rem;
+    top: 20.37rem;
+    left: 14.0rem;
+    background: url(../images/75.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.treasure {
+    position: absolute;
+    bottom: .8rem;
+    right: 1.6rem;
+    width: 6.1rem;
+    height: 6.6rem;
+    background: url(../images/74.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.treasureBoxSort {
+    position: absolute;
+    top: 4.9rem;
+    left: 3rem;
+    width: 33.8rem;
+    height: 5.5rem;
+    border-bottom: .1rem solid rgba(128, 98, 51, 1);
+}
+
+.treasureBoxSpecial1 {
+    float: left;
+    width: 15.9rem;
+    height: 5.5rem;
+    color: #553208;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 5.5rem;
+    font-weight: bold;
+}
+
+.treasureBoxSpecial2 {
+    color: #F18600;
+    border-bottom: .2rem solid #F18600;
+}
+
+.treasureBoxOrdinary1 {
+    float: right;
+    width: 15.9rem;
+    height: 5.5rem;
+    color: #553208;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 5.5rem;
+    font-weight: bold;
+}
+
+.treasureBoxOrdinary2 {
+    color: #F18600;
+    border-bottom: .2rem solid #F18600;
+}
+
+.endding {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #DCD1B9;
+}
+
+.endding1 {
+    margin-left: 12.5rem;
+    font-size: 1.3rem;
+    color: #DCD1B9;
+}
+
+/*百宝箱内容详情*/
+
+.treasureBox-detail {
+    width: 100%;
+    position: relative;
+    padding: 2.2rem 1.0rem;
+    text-align: center;
+}
+
+.treasureBox-detail>h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.treasureBox-detail>img {
+    width: 100%;
+    height: 8.4rem;
+    margin-bottom: 1.6675rem;
+}
+
+.treasureBox-inner {
+    position: relative;
+    padding-left: .1875rem;
+    width: 100%;
+    max-height: 38rem;
+    overflow: auto;
+    text-align: left;
+    line-height: 2.535rem;
+    font-size: 1.4rem;
+    text-indent: 2em;
+}
+
+.audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.audio>h1 {
+    margin-top: 6%;
+    font-family: PingFang-SC-Bold;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6), -1px 1px 2px rgba(0, 0, 0, 0.6), 0px 1px 2px rgba(0, 0, 0, 0.6), 0px -1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.audio>h2 {
+    font-family: PingFang-SC-Bold;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    line-height: 6.797rem;
+}
+
+.audio-content {
+    position: absolute;
+    width: 29rem;
+    height: 9.6715rem;
+    bottom: 3%;
+    left: 15%;
+}
+
+.audio-content-share {
+    position: absolute;
+    width: 29rem;
+    height: 9.6715rem;
+    top: 55rem;
+    left: 6rem;
+}
+
+.lesson-audio {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.lesson-audio>img {
+    width: 100%;
+    height: 100%;
+}
+
+.lessonAd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    z-index: 9000;
+}
+
+.lessonAd>img {
+    width: 100%;
+    height: 100%;
+}
+
+.lessonAd>h1 {
+    position: absolute;
+    top: 3.5%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.adAudio-content {
+    position: absolute;
+    width: 29rem;
+    height: 9.67rem;
+    bottom: 2.5rem;
+    left: 6.5rem;
+}
+
+.progressBar {
+    position: absolute;
+    left: 0;
+    width: 29rem;
+    height: .5rem;
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+}
+
+.progressReal {
+    display: inline-block;
+    float: left;
+    /* width: 200px; */
+    height: .5rem;
+    background: rgba(147, 209, 36, 1);
+    opacity: 1;
+    border-radius: .5rem;
+}
+
+.progressKey {
+    display: inline-block;
+    margin-left: -.1125rem;
+    width: .77rem;
+    height: 1.4rem;
+    margin-top: -.6rem;
+    float: left;
+    background: url(../images/76.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.successed {
+    float: left;
+    line-height: 3.8rem;
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.unsuccessed {
+    float: right;
+    line-height: 3.8rem;
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.progress-start {
+    position: absolute;
+    width: 6.3rem;
+    height: 6.3rem;
+    left: 11.35rem;
+    top: 3.4rem;
+    background: url(../images/78.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.progress-stop {
+    position: absolute;
+    width: 6.3rem;
+    height: 6.3rem;
+    left: 11.35rem;
+    top: 3.4rem;
+    background: url(../images/136.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.progress-download {
+    position: absolute;
+    width: 6.3rem;
+    height: 6.3rem;
+    left: 11.35rem;
+    top: 3.4rem;
+    background: url(../images/135.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*智慧塔首页*/
+
+/*left*/
+
+.leftOptions {
+    position: fixed;
+    top: 1.668rem;
+    z-index: 2000;
+}
+
+.left-tabs {
+    position: relative;
+    width: 6rem;
+    height: 6.2rem;
+    display: flex;
+    top: .85rem;
+    margin: 0 .5rem .17rem;
+}
+
+.stamina,
+.beans,
+.pk {
+    position: absolute;
+    width: 4.9rem;
+    height: 4.9rem;
+    background: url(../images/79.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    margin: auto;
+    left: .65rem;
+}
+
+.stamina>img,
+.beans>img,
+.maildrop>img,
+.signed>img,
+.giftbox>img {
+    width: 3.55rem;
+    margin: auto;
+}
+
+.pk>img {
+    width: 3.55rem;
+    margin: auto;
+}
+
+.stamina-progress {
+    position: relative;
+    width: 6rem;
+    height: 56.5%;
+    background: url(../images/82.png) no-repeat;
+    background-size: 6rem 3.5rem;
+    top: 27%;
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.pk-progress,
+.beans-progress {
+    position: relative;
+    width: 6rem;
+    height: 58.5%;
+    background: url(../images/82.png) no-repeat;
+    background-size: 6rem 3.5rem;
+    top: 27%;
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.stamina-progress>span {
+    position: absolute;
+    display: inline;
+    line-height: 3.3rem;
+    z-index: 2100;
+}
+
+.realStamina {
+    position: absolute;
+    top: 0.0;
+    left: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.regulation {
+    position: absolute;
+    top: 0;
+    left: 2.8rem;
+    font-size: 1.2rem;
+}
+
+.icon_stamina {
+    margin: 15% 8% 0 0;
+    font-size: 1rem;
+    z-index: 2100;
+    /* line-height: 16%; */
+    float: right;
+}
+
+.stamina-value {
+    margin: .69rem 0 0 .46rem;
+    /* width: 5.2rem; */
+    height: 2rem;
+    background: linear-gradient(0deg, rgba(33, 108, 221, 1) 0%, rgba(41, 117, 228, 1) 33%, rgba(104, 233, 255, 1) 100%);
+    border-radius: 10px/20px;
+    z-index: 2000;
+}
+
+.beans-value {
+    margin: .69rem 0 0 .46rem;
+    /* width: 5.2rem; */
+    height: 2rem;
+    background: linear-gradient(0deg, rgba(84, 160, 55, 1) 0%, rgba(111, 185, 78, 1) 33%, rgba(137, 199, 95, 1) 100%);
+    border-radius: 10px/20px;
+    z-index: 2000;
+}
+
+.wisdombean {
+    position: absolute;
+    display: inline-block;
+    width: 5.2rem;
+    top: .8rem;
+    left: .5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    z-index: 2100;
+}
+
+.pk-value {
+    margin: .69rem 0 0 .46rem;
+    /* width: 5.2rem; */
+    height: 2rem;
+    background: linear-gradient(0deg, rgba(101, 93, 255, 1) 0%, rgba(120, 94, 255, 1) 39%, rgba(181, 140, 255, 1) 100%);
+    border-radius: 10px/20px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.pkVal {
+    position: absolute;
+    display: inline-block;
+    width: 5.2rem;
+    top: .8rem;
+    left: .5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    z-index: 2100;
+}
+
+/*right*/
+
+.home-sign {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 7.55rem;
+    height: 7.2rem;
+    background: url(../images/85.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 2000;
+}
+
+.home-sign>.people {
+    position: absolute;
+    top: 3.5rem;
+    width: 7.55rem;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.home-sign>.people>p {
+    font-weight: bold;
+    color: #633110;
+    text-shadow: -2px 0px 1px #FFFFFF, 2px 0px 1px #FFFFFF, 0px -2px 1px #FFFFFF, 0px 2px 1px #FFFFFF;
+}
+
+.inforBox {
+    position: fixed;
+    top: 8.95rem;
+    right: 1.15rem;
+    width: 4.7rem;
+    z-index: 2000;
+}
+
+.right-tabs {
+    position: relative;
+    width: 6rem;
+    height: 6.2rem;
+    display: flex;
+    margin: 0 0 .3rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.maildrop,
+.signed,
+.giftbox {
+    position: absolute;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/79.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    margin: auto;
+}
+
+.nomail,
+.nogiftbox {
+    position: relative;
+    width: 4.9rem;
+    height: 2.5rem;
+    background: url(../images/94.png) no-repeat;
+    background-size: 100% 100%;
+    top: 3.8355rem;
+    text-align: center;
+    line-height: 2.3rem;
+}
+
+.nosigned {
+    position: relative;
+    width: 6.05rem;
+    height: 2.8rem;
+    background: url(../images/94.png) no-repeat;
+    background-size: 100% 100%;
+    top: 3.7355rem;
+    left: -.65rem;
+    text-align: center;
+    line-height: 2.55rem;
+}
+
+.maildrop-infor,
+.giftbox-infor {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    width: 4.55rem;
+    height: 1.734rem;
+    top: 4.3355rem;
+    line-height: 1.734rem;
+    background: linear-gradient(0deg, rgba(215, 115, 24, 1) 0%, rgba(230, 146, 34, 1) 33%, rgba(255, 225, 57, 1) 100%);
+    border-radius: 1.5rem;
+}
+
+.signed-recording {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    width: 4.55rem;
+    height: 1.734rem;
+    top: 4.3355rem;
+    left: 0;
+    line-height: 1.734rem;
+    background: linear-gradient(0deg, rgba(221, 55, 33, 1) 0%, rgba(228, 63, 41, 1) 33%, rgba(255, 122, 104, 1) 100%);
+    border-radius: 1.5rem;
+}
+
+.level-next {
+    position: relative;
+    top: 24.33rem;
+}
+
+.level-next-again {
+    position: relative;
+    top: .32rem;
+}
+
+.level-list {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000 !important;
+    top: 10rem;
+    right: 14.06rem;
+}
+
+.level-list2 {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000 !important;
+    top: 11rem;
+    right: 14.06rem;
+}
+
+.level-list2>li {
+    position: relative;
+    margin-bottom: 5.35rem;
+    text-align: center;
+    line-height: 2.65rem;
+    font-size: 0.9rem;
+    width: 2.35rem;
+    height: 2.65rem;
+    font-weight: bold;
+    color: rgba(254, 246, 223, 1);
+}
+
+.level-list>li {
+    position: relative;
+    margin-bottom: 5.35rem;
+    text-align: center;
+    line-height: 2.65rem;
+    font-size: 0.9rem;
+    width: 2.35rem;
+    height: 2.65rem;
+    font-weight: bold;
+    color: rgba(254, 246, 223, 1);
+}
+
+/* 底座 */
+
+/* 第一关位置 */
+
+.LevelPosition1 {
+    top: -6rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第二关位置 */
+
+.LevelPosition2 {
+    left: -10.9rem;
+    top: -1rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第三关位置 */
+
+.LevelPosition3 {
+    top: -7.5rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第四关位置 */
+
+.LevelPosition4 {
+    left: -10.9rem;
+    top: -2.5rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第五关位置 */
+
+.LevelPosition5 {
+    top: -8.5rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第六关位置 */
+
+.LevelPosition6 {
+    left: -10.9rem;
+    top: -3rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.LevelPosition1>span,
+.LevelPosition3>span,
+.LevelPosition5>span {
+    margin-left: .2rem;
+    transform: rotate(16deg);
+}
+
+.LevelPosition2>span,
+.LevelPosition4>span,
+.LevelPosition6>span {
+    margin-right: .2rem;
+    transform: rotate(-16deg);
+}
+
+/* 循环 */
+
+/* 第一关位置 */
+
+.LevelLoopPosition1 {
+    top: -6rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第二关位置 */
+
+.LevelLoopPosition2 {
+    left: -10.9rem;
+    top: -.65rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第三关位置 */
+
+.LevelLoopPosition3 {
+    top: -6.5rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第四关位置 */
+
+.LevelLoopPosition4 {
+    left: -10.9rem;
+    top: -1.3rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第五关位置 */
+
+.LevelLoopPosition5 {
+    top: -8rem;
+    background: url(../images/96.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 第六关位置 */
+
+.LevelLoopPosition6 {
+    left: -10.9rem;
+    top: -3rem;
+    background: url(../images/95.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.LevelLoopPosition1>span,
+.LevelLoopPosition3>span,
+.LevelLoopPosition5>span {
+    margin-left: .2rem;
+    transform: rotate(16deg);
+}
+
+.LevelLoopPosition2>span,
+.LevelLoopPosition4>span,
+.LevelLoopPosition6>span {
+    margin-right: .2rem;
+    transform: rotate(-16deg);
+}
+
+/* 闯关失败 */
+
+.evenFailLevel {
+    background: url(../images/99.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.oddFailLevel {
+    background: url(../images/100.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 呼吸灯 */
+
+.evenWillLevel {
+    position: absolute;
+    top: .1rem;
+    left: 0;
+    width: 2rem;
+    height: 2.2rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: #def324;
+    transform: rotate(-18deg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dce494), to(#d9e478));
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+.oddWillLevel {
+    position: absolute;
+    top: .2rem;
+    left: .3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: #def324;
+    transform: rotate(14deg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dce494), to(#d9e478));
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+.noBreathe {
+    display: none;
+}
+
+@-webkit-keyframes breathe {
+    0% {
+        background: rgba(255, 246, 0, .5)
+    }
+
+    100% {
+        background: rgba(255, 246, 0, 0)
+    }
+}
+
+.specialReward {
+    position: absolute;
+    top: 2.3rem;
+    width: 7.65rem;
+    height: 3rem;
+    border: .2rem #458630 solid;
+    background-color: #A2C012;
+    border-radius: 1.5rem;
+}
+
+.noSpecialReward {
+    display: none;
+}
+
+.specialReward>img {
+    position: absolute;
+    top: -.29rem;
+    left: -.45rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.specialReward>span {
+    position: absolute;
+    left: 2.7rem;
+    line-height: 2.7rem;
+    text-shadow: 1px 0px 0 #458630, -1px 0px 0 #458630, 0px 1px 0 #458630, 0px -1px 0 #458630;
+}
+
+.noLevelTime {
+    display: none;
+}
+
+.levelTime {
+    position: absolute;
+    top: 2.3rem;
+    width: 5.3rem;
+    height: 3.1rem;
+    border: .2rem #458630 solid;
+    background-color: #A2C012;
+    border-radius: 1.5rem;
+}
+
+.levelTime img {
+    width: 1.5rem;
+}
+
+.levelTime>p {
+    text-shadow: 1px 0px 0 #458630, -1px 0px 0 #458630, 0px 1px 0 #458630, 0px -1px 0 #458630;
+}
+
+/*buttom*/
+
+.bottom-table {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9.6rem;
+    z-index: 9999;
+    left: -1rem;
+}
+
+.bottom-table>ul {
+    margin-top: 0;
+}
+
+.bottom-table>ul>li {
+    float: left;
+    margin-left: 2.5rem;
+}
+
+.menu {
+    width: 6.5rem;
+    margin: 0 .5rem;
+}
+
+.menu img {
+    width: 6.8rem;
+}
+
+.menu1 {
+    transform: scale(1.2, 1.2);
+}
+
+/*签到*/
+
+.home-recording {
+    position: absolute;
+    top: 9.15rem;
+    width: 100%;
+    height: 45.65rem;
+    background: url(../images/103.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.recordOver {
+    position: absolute;
+    left: 5.05rem;
+    top: 23.345rem;
+    width: 31.45rem;
+    height: 20.5rem;
+    background: url(../images/120.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.recordImg {
+    margin: 5.3rem auto;
+    width: 6.3rem;
+    height: 7.4rem;
+    background: url(../images/87.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.recordMsg {
+    width: 31.05rem;
+    margin-top: -5.14rem;
+    text-align: center;
+    color: #956826;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.recordHasbeans {
+    position: absolute;
+    left: 6.05rem;
+    top: 19.9rem;
+    width: 29.45rem;
+    height: 27.45rem;
+    background: url(../images/120.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.recordBeans {
+    width: 29.45rem;
+    text-align: center;
+}
+
+.recordBeans>img {
+    width: 5.25rem;
+}
+
+.recordBeans>span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(67, 144, 67, 1);
+}
+
+.recordClose {
+    position: absolute;
+    right: .4875rem;
+    top: .667rem;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+/*体力值提示*/
+
+.stamina-tips {
+    position: absolute;
+    top: 20.05rem;
+    left: 6.8rem;
+    width: 27.7rem;
+    height: 26.68rem;
+    background: url(../images/104.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 4.7rem;
+}
+
+.staminaClose {
+    position: absolute;
+    right: 1.3rem;
+    top: .667rem;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.stamina-tips>i {
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.25rem;
+    /* text-shadow: 1px 1px 3px #388D38; */
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.stamina-tips>img {
+    width: 7.15rem;
+    padding-top: .98rem;
+    padding-bottom: .667rem;
+}
+
+.stamina-tips>h1>#ownStamina {
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(149, 104, 38, 1);
+}
+
+.stamina-tips>h1>#maxStamina {
+    font-size: 1.6rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(149, 104, 38, 1);
+}
+
+.stamina-tips>p {
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.25rem;
+}
+
+/*首次闯关*/
+
+.level-num {
+    position: absolute;
+    top: 5%;
+    left: 17.025rem;
+    width: 9.56rem;
+    height: 1.95rem;
+    font-size: 2rem;
+    font-family: Adobe Heiti Std R;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(56, 141, 56, 1);
+}
+
+.level-passed {
+    left: 10.575rem;
+    width: 15.94rem;
+}
+
+.round {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    top: .974rem;
+    box-shadow: 1px 2px 1px rgba(56, 141, 56, 1);
+}
+
+.left-round {
+    left: 0;
+}
+
+.leftName-round {
+    left: -3.725rem;
+}
+
+.right-round {
+    left: 7.725rem;
+}
+
+.rightName-round {
+    left: 9.725rem;
+}
+
+.level-inner-num {
+    top: 4rem;
+}
+
+.level-num span {
+    display: block;
+    position: absolute;
+    left: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.level-name {
+    left: -2rem !important;
+}
+
+.level-passed>p {
+    position: absolute;
+    width: 92%;
+    left: 19%;
+    text-align: center;
+}
+
+.level_btn {
+    position: absolute;
+    top: 4.5rem;
+    right: 1.75rem;
+    width: 3.65rem;
+    height: 3.65rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.passIng,
+.first-pass,
+.next-pass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/106.png);
+    background-size: 100% 100%;
+}
+
+.pass-gift {
+    position: absolute;
+    left: 8.7rem;
+    top: 11%;
+    width: 7.55rem;
+    text-align: center;
+}
+
+.stamina-reward {
+    float: left;
+    width: 9.4rem;
+    height: 4.35rem;
+    line-height: 4.35rem;
+}
+
+.pk-reward {
+    position: absolute;
+    top: .37rem;
+    left: 12.55rem;
+    width: 9.4rem;
+    height: 4.35rem;
+    line-height: 4.35rem;
+}
+
+.stamina-reward>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.pk-reward>img {
+    width: 3.9rem;
+    height: 3.05rem;
+}
+
+.pass-gift span,
+.pass-end span {
+    position: absolute;
+    top: 1.37rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(67, 144, 67, 1);
+}
+
+.other-gift {
+    position: absolute;
+    top: 108%;
+    width: 24rem;
+    height: 172%;
+    background: rgba(255, 247, 223, 1);
+    border-radius: 1.5rem;
+    box-shadow: .2rem .1rem 4.5rem .1rem #F4E476 inset;
+}
+
+.other-giftbox {
+    position: absolute;
+    top: .5rem;
+    width: 8.2rem;
+    height: 87%;
+}
+
+.other-giftbox img {
+    float: left;
+    width: 8.2rem;
+    height: 100%;
+}
+
+.other-giftbox div {
+    position: absolute;
+    top: 1.98rem;
+    left: 8.69rem;
+    width: 10.46rem;
+    font-size: 2rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: #9C7A6A;
+}
+
+.start {
+    position: absolute;
+    width: 15.4rem;
+    height: 4.85rem;
+    top: 31%;
+    left: 13rem;
+    text-align: center;
+    background: url(../images/110.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.85rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.next-level {
+    position: absolute;
+    width: 15rem;
+    height: 4.5rem;
+    top: 31.5%;
+    left: 12.5rem;
+    text-align: center;
+    background: url(../images/110.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.icon-board {
+    position: absolute;
+    top: 47%;
+    left: 16.5rem;
+    width: 10rem;
+    height: 1.7rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: 600;
+    color: rgba(41, 151, 10, 1);
+}
+
+.board-table {
+    position: absolute;
+    left: 9.0rem;
+    top: 53%;
+    width: 24.375rem;
+    height: 39%;
+    overflow: auto;
+}
+
+.board-list {
+    margin-bottom: 5.3rem;
+}
+
+.board-list>li {
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+    float: left;
+    padding: .5rem .35rem;
+}
+
+.board-list>li>p {
+    display: inline-block;
+    margin: 0 .2rem;
+    overflow: hidden;
+    line-height: 4.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.border-num {
+    width: 1.8rem;
+}
+
+.border-num-color {
+    color: #29970A;
+}
+
+.border-head {
+    width: 4.3rem;
+    height: 4.3rem;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: .5rem;
+}
+
+.border-head>img {
+    margin: -.25rem 0 0 .35rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: .5rem;
+}
+
+.border-name,
+.border-time {
+    width: 4rem;
+}
+
+.border-phiz {
+    width: 5.4rem;
+}
+
+.border-phiz>img {
+    width: 2.65rem;
+}
+
+/* 关卡详情背景 */
+
+.level-content {
+    width: 100%;
+    height: 47%;
+    background: url(../images/112.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*闯关内容*/
+
+.level-timing {
+    position: absolute;
+    right: 1.24rem;
+    top: 1.5rem;
+    width: 8.2rem;
+    height: 3.3rem;
+    background: url(../images/116.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 3.3rem;
+    text-indent: .75rem;
+}
+
+.level-timing span {
+    font-size: 1.3rem;
+    font-family: Adobe Heiti Std R;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.level-topic {
+    position: absolute;
+    top: 12%;
+    left: 3.9rem;
+    width: 81.2%;
+    height: 20.5%;
+    border-radius: 1.5rem;
+    display: flex;
+    z-index: 10000;
+    display: none;
+    text-align: center;
+    background: #FFF6DB;
+}
+
+.level-topic-hidden {
+    z-index: 100;
+}
+
+.level-topic>img {
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+.kit {
+    position: absolute;
+    width: 28.2rem;
+    height: 5rem;
+    top: 27.88rem;
+    left: .3rem;
+} */
+
+.kit-content {
+    position: absolute;
+    width: 26rem;
+    height: 6%;
+    left: 4.36rem;
+    top: 38%;
+    padding: .2rem;
+    border-radius: .5rem;
+    background: #FFFCF3;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(125, 83, 48, 1);
+}
+
+.kit-image {
+    position: absolute;
+    right: 4.2rem;
+    top: 37%;
+    width: 15%;
+    height: 8%;
+    background: url(../images/113.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 锦囊抖动 */
+.kitShake {
+    animation: shake 1s;
+    -o-animation: shake 1s;
+    -webkit-animation: shake 1s;
+    -moz-animation: shake 1s;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-.5rem);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(.5rem);
+    }
+}
+
+@-o-keyframes shake {
+
+    /* Opera */
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-.5rem);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(.5rem);
+    }
+}
+
+@-webkit-keyframes shake {
+
+    /* Safari 和 Chrome */
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-.5rem);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(.5rem);
+    }
+}
+
+@-moz-keyframes shake {
+
+    /* Firefox */
+    0%,
+    100% {
+        -moz-transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -moz-transform: translateX(-.5rem);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -moz-transform: translateX(.5rem);
+    }
+}
+
+.respond-blank {
+    position: absolute;
+    width: 84%;
+    top: 47%;
+    left: 4.25rem;
+    height: 16%;
+}
+
+.respond-blank>ul {
+    margin: .3335rem .56rem;
+    width: 98%;
+    height: 100%;
+}
+
+.respond-blank>ul>li {
+    float: left;
+    margin: .667rem .56rem;
+    /* width: 12.5%;
+    height: 33%; */
+    width: 4rem;
+    height: 4rem;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 0px #348541;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(52, 133, 65, 1);
+}
+
+.errorTips {
+    border: 1px solid red;
+}
+
+.respond-key {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38%;
+    background: url(../images/114.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.respond-key>ul {
+    position: absolute;
+    left: 2.975rem;
+    top: 25%;
+    width: 90%;
+    height: 69%;
+    overflow: auto;
+}
+
+.respond-key>ul>li {
+    float: left;
+    margin: .667rem .375rem;
+    width: 4.3rem;
+    height: 4.3rem;
+    background: #A2C012;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px 0px #348541;
+    text-align: center;
+    line-height: 4.3rem;
+    font-size: 2.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*闯关演示*/
+
+.topic-operate {
+    position: absolute;
+    width: 18.075rem;
+    height: 11.05rem;
+    top: 25.15rem;
+    left: 9.9rem;
+    z-index: 350;
+    display: block;
+}
+
+/* 新用户演示 */
+
+.blank-show {
+    position: absolute;
+    top: 48%;
+    left: 5rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: .5rem;
+    background: #D7EEFF;
+    z-index: 99999;
+    display: none;
+}
+
+.respond-blank-show {
+    position: absolute;
+    margin-left: .3rem;
+    margin-top: .3rem;
+    width: 4rem;
+    height: 4rem;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 0px #348541;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(52, 133, 65, 1);
+}
+
+.key-show {
+    position: absolute;
+    top: 26.5%;
+    right: 8.3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    background: #FEF5D4;
+    z-index: 99999;
+    display: none;
+}
+
+.respond-key-show {
+    position: absolute;
+    margin-left: .31rem;
+    margin-top: .28rem;
+    width: 4.3rem;
+    height: 4.3rem;
+    background: #A2C012;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px 0px #348541;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.level-show {
+    width: 6.5rem;
+    height: 9.338rem;
+    background: url(../images/115.png) no-repeat;
+    background-size: 100% 100%;
+    border: 1px dashed gainsboro;
+}
+
+.level-tips {
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1rem 1.2rem 1.7rem rgba(19, 37, 102, 0.5);
+}
+
+/* 内容演示 */
+
+.topic-show {
+    position: relative;
+    left: 17.05rem;
+    top: 33%;
+}
+
+.topic-tips {
+    position: relative;
+    left: 12.175rem;
+    top: 33%;
+}
+
+/* 提示文字演示 */
+
+.tipContent-show {
+    position: absolute;
+    left: 1.425rem;
+    top: 2.668rem;
+    width: 7.25rem;
+    height: 8.75rem;
+    background: url(../images/255.png) no-repeat;
+    background-size: 100% 100%;
+    border: .1rem dashed gainsboro;
+}
+
+.tipContent-tips {
+    position: absolute;
+    left: 22rem;
+    top: 90%;
+}
+
+/* 删除演示 */
+
+.tipKey-show {
+    position: absolute;
+    left: 1.425rem;
+    top: 52%;
+    width: 7.25rem;
+    height: 8.75rem;
+    background: url(../images/255.png) no-repeat;
+    background-size: 100% 100%;
+    border: .1rem dashed gainsboro;
+}
+
+.tipKey-tips {
+    position: relative;
+    left: 1.05rem;
+    top: 66%;
+}
+
+/*再次闯关*/
+
+.pass-again {
+    position: absolute;
+    top: 13%;
+    left: 16.75rem;
+    width: 8.5rem;
+    height: 12.7rem
+}
+
+.pass-again>img {
+    position: absolute;
+    left: .3rem;
+    width: 6.7rem;
+    height: 7.5rem;
+}
+
+.pass-again>p {
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(70, 146, 71, 1);
+    top: 7.6rem;
+    left: .5rem;
+}
+
+.next {
+    position: absolute;
+    width: 15.4rem;
+    height: 4.85rem;
+    top: 31%;
+    left: 13.06rem;
+    background: url(../images/110.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.85rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+    text-align: center;
+}
+
+/*退出关卡*/
+
+.close-level {
+    position: absolute;
+    top: 19.08rem;
+    left: 7.29rem;
+    width: 27.45rem;
+    height: 19.9rem;
+    background: url(../images/120.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.close-level>p {
+    position: absolute;
+    top: 6.6rem;
+    left: 9.825rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.25rem;
+}
+
+.close-confirm,
+.close-cancel {
+    position: absolute;
+    left: 4.6rem;
+    top: 10.45rem;
+    width: 8.4rem;
+    height: 4.15rem;
+    background: url(../images/118.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.15rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.close-cancel {
+    left: 14.35rem;
+    background: url(../images/119.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*点击锦囊*/
+
+/*智慧豆充足*/
+
+.kit-havebeans {
+    position: absolute;
+    top: 19.08rem;
+    left: 6.54rem;
+    width: 28.324rem;
+    height: 26.05rem;
+    background: url(../images/121.png) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.signed-close,
+.kit-close,
+.operate-del-tips1>img,
+.operate-del-tips2>img {
+    position: absolute;
+    right: .4875rem;
+    top: .667rem;
+    width: 4rem;
+    z-index: 9999;
+}
+
+.kit-havebeans>h1,
+.kit-nobeans>h1,
+.kit-enter3>h1,
+.kit-enter2>h1,
+.kit-enter1>h1 {
+    position: absolute;
+    left: 9.86rem;
+    top: 3.67rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 4.5rem;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.kit-cost {
+    position: absolute;
+    top: 7.17rem;
+    left: 8.43rem;
+    width: 7.2rem;
+    height: 7.8rem;
+}
+
+.kit-havebeans>span,
+.kit-nobeans>span {
+    position: absolute;
+    right: 8.65rem;
+    top: 10.37rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(67, 144, 67, 1);
+}
+
+.kit-view {
+    position: absolute;
+    width: 14.85rem;
+    height: 4.3rem;
+    left: 6.3rem;
+    top: 14.75rem;
+    background: url(../images/110.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.3rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.kit-havebeans>p,
+.kit-nobeans>p {
+    position: absolute;
+    top: 19.57rem;
+    width: 26.85rem;
+    height: 4.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+    line-height: 1.734rem;
+}
+
+/*智慧豆不足*/
+
+.kit-nobeans {
+    position: absolute;
+    top: 19.08rem;
+    left: 6.54rem;
+    width: 27.95rem;
+    height: 26.05rem;
+    background: url(../images/121.png) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.kit-echarge {
+    position: absolute;
+    width: 19.8rem;
+    height: 4.85rem;
+    left: 4.05rem;
+    top: 15.42rem;
+    background: url(../images/122.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.38rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(206, 33, 23, 0.75);
+}
+
+/*打开锦囊*/
+
+.kit-enter3 {
+    position: absolute;
+    top: 6.3rem;
+    left: 6.75rem;
+    width: 28.05rem;
+    height: 55.7rem;
+    background: url(../images/123.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.kit-enter2 {
+    position: absolute;
+    top: 8.55rem;
+    left: 6.75rem;
+    width: 28.05rem;
+    height: 49.08rem;
+    background: url(../images/126.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.kit-enter1 {
+    position: absolute;
+    top: 11.55rem;
+    left: 6.75rem;
+    width: 28.05rem;
+    height: 43.64rem;
+    background: url(../images/127.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.kit-enter3>ul,
+.kit-enter2>ul,
+.kit-enter1>ul {
+    position: absolute;
+    width: 20.625rem;
+    left: 3.675rem;
+    top: 7.884rem;
+}
+
+.kit-enter3>ul>li,
+.kit-enter2>ul>li,
+.kit-enter1>ul>li {
+    float: left;
+    margin: .667rem .56rem;
+    width: 4rem;
+    height: 4rem;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 0px #348541;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(52, 133, 65, 1);
+}
+
+.kit-lesson3 {
+    position: absolute;
+    top: 25.99rem;
+    left: 6.3rem;
+    width: 15.2rem;
+    height: 22.678rem;
+}
+
+.kit-lesson2 {
+    position: absolute;
+    top: 19.32rem;
+    left: 6.3rem;
+    width: 15.2rem;
+    height: 22.678rem;
+}
+
+.kit-lesson1 {
+    position: absolute;
+    top: 13.98rem;
+    left: 6.3rem;
+    width: 15.2rem;
+    height: 22.678rem;
+}
+
+.kit-lesson3 p,
+.kit-lesson2 p,
+.kit-lesson1 p {
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    /* font-weight: bold; */
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.lessonbackground3,
+.lessonbackground2,
+.lessonbackground1 {
+    position: absolute;
+    top: 2.87rem;
+    width: 15.2rem;
+    height: 20.5rem;
+}
+
+.kit-lesson3>h1,
+.kit-lesson2>h1,
+.kit-lesson1>h1 {
+    position: absolute;
+    left: 1.63rem;
+    top: 15.45rem;
+    font-size: 1.3rem;
+    font-family: PingFang-SC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.lesson-gifts {
+    position: absolute;
+    top: 20rem;
+    left: 2.07rem;
+    right: 2.07rem;
+    font-size: 1.1rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.lesson-smile {
+    float: left;
+}
+
+.lesson-star {
+    float: right;
+}
+
+.lesson-smile img,
+.lesson-star img,
+.table-smile img,
+.table-star img {
+    width: 1.55rem;
+}
+
+/*闯关成功*/
+
+.pass-end {
+    top: 13%;
+    left: 5.5rem;
+    width: 27.68rem;
+}
+
+.pass-time {
+    float: left;
+    width: 7.77rem;
+    height: 4.35rem;
+    line-height: 4.35rem;
+}
+
+.stamina-end {
+    position: absolute;
+    top: 0;
+    left: 9.6rem;
+    line-height: 4.35rem;
+}
+
+.pk-end {
+    position: absolute;
+    top: 0;
+    left: 18.89rem;
+    line-height: 4.35rem;
+}
+
+.pass-time>img {
+    width: 3.45rem;
+    height: 3.85rem;
+}
+
+.special-gift {
+    top: 20%;
+    left: 8.7rem;
+    height: 11.1%;
+}
+
+.special-gift>img {
+    height: 100%;
+}
+
+/*音频闯关内容*/
+.level-topic>.level-audio-content {
+    position: absolute;
+    width: 29.75rem;
+    top: 28%;
+    left: 2.2rem;
+}
+
+.level-topic>.level-audio-content>#progressBar {
+    top: 55%;
+}
+
+/* 课程信息 */
+.lesson-container>.level-audio-content {
+    position: absolute;
+    width: 29.75rem;
+    top: 4.6rem;
+    left: 3.5rem;
+}
+
+.level-successed {
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(97, 153, 34, 1);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+.level-unsuccessed {
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(138, 100, 68, 1);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+/*课程列表*/
+
+.lesson-sort {
+    position: relative;
+    top: 1.6675rem;
+    margin-left: 2.8rem;
+    width: 35.9rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.lesson-sort>li {
+    float: left;
+    list-style: none;
+    margin-left: .7rem;
+}
+
+/*未点击*/
+
+.sort {
+    width: 8.05rem;
+    height: 3.45rem;
+    background: url(../images/130.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-sort span {
+    text-align: center;
+    line-height: 3.45rem;
+    font-size: 1.3rem;
+    font-family: Adobe Heiti Std R;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sort>span {
+    text-shadow: 1px 2px 2px rgba(102, 102, 102, 1), -1px 2px 2px rgba(102, 102, 102, 1), 0px 2px 2px rgba(102, 102, 102, 1), 0px -2px 2px rgba(102, 102, 102, 1);
+}
+
+.sort1 {
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, .8), -1px 2px 2px rgba(21, 117, 6, .8), 0px 2px 2px rgba(21, 117, 6, .8), 0px -2px 2px rgba(21, 117, 6, .8);
+}
+
+.sort2 {
+    text-shadow: 1px 2px 2px rgba(240, 163, 22, 0.8), -1px 2px 2px rgba(240, 163, 22, 0.8), 0px 2px 2px rgba(240, 163, 22, 0.8), 0px -2px 2px rgba(240, 163, 22, 0.8);
+}
+
+.sort3 {
+    text-shadow: 1px 2px 2px rgba(204, 49, 10, 0.8), -1px 2px 2px rgba(204, 49, 10, 0.8), 0px 2px 2px rgba(204, 49, 10, 0.8), 0px -2px 2px rgba(204, 49, 10, 0.8);
+}
+
+.sort4 {
+    text-shadow: 1px 2px 2px rgba(37, 13, 173, 0.8), -1px 2px 2px rgba(37, 13, 173, 0.8), 0px 2px 2px rgba(37, 13, 173, 0.8), 0px -2px 2px rgba(37, 13, 173, 0.8);
+}
+
+/*点击综合排序*/
+
+.sort1 {
+    background: url(../images/129.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*点击购买量排序*/
+
+.sort2 {
+    background: url(../images/131.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*点击智慧豆排序*/
+
+.sort3 {
+    background: url(../images/132.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*点击评分排序*/
+
+.sort4 {
+    background: url(../images/133.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-content {
+    position: relative;
+    width: 100%;
+    height: 83%;
+    margin-top: 1.35rem;
+    background: url(../images/128.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 350;
+}
+
+.lesson-list {
+    position: relative;
+    width: 86%;
+    height: 85%;
+    left: 3.6rem;
+    top: 2rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.lesson-list>ul>li {
+    float: left;
+    list-style: none;
+    margin: 1rem;
+}
+
+.table-lesson {
+    width: 15.2rem;
+    height: 20.5rem;
+    font-size: 1.1rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.table-lesson>img {
+    height: 20.5rem;
+    width: 15.2rem;
+}
+
+.lesson-name1 {
+    position: absolute;
+    left: 1.34rem;
+    width: 13.7rem;
+    top: 1rem;
+    font-size: 1.3rem;
+}
+
+.lesson-name2 {
+    position: relative;
+    left: 1.34rem;
+    width: 13.7rem;
+    top: .95rem;
+    font-size: 1.3rem;
+}
+
+.sortText {
+    position: relative;
+    bottom: 6rem;
+    width: 15.2rem;
+    height: 6rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(176, 178, 180, .2) 100%);
+}
+
+.table-smile {
+    position: absolute;
+    top: 4rem;
+    left: 1.3rem;
+}
+
+.table-star {
+    position: absolute;
+    top: 4rem;
+    left: 10.1rem;
+}
+
+.table-smile>img,
+.table-star>img {
+    vertical-align: text-bottom;
+}
+
+/*课程列表底部*/
+
+.lesson-menu {
+    position: absolute;
+    width: 100%;
+    height: 8.6rem;
+    bottom: 0;
+    background: url(../images/134.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.lesson-menu>ul {
+    margin-top: -1rem;
+    margin-left: -1.5rem;
+}
+
+.lesson-menu>ul>li {
+    float: left;
+    margin-left: 2.5rem;
+}
+
+/*进入课程*/
+
+/*导师信息*/
+
+.lesson-tutor {
+    position: absolute;
+    top: 14%;
+    left: 4%;
+    width: 21.2rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    font-family: PingFang-SC-Medium;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.lesson-tutor>ul,
+.game-ranger>ul {
+    text-align: center;
+}
+
+.game-ranger>ul>li {
+    float: left;
+    margin: .87rem;
+    line-height: 5.74rem;
+}
+
+.lesson-tutor>ul>li {
+    float: left;
+    margin: .87rem;
+    line-height: 3.8rem;
+}
+
+.useName {
+    width: 4.45rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game-ranger .img-bg {
+    width: 6rem;
+    height: 6rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.game-ranger img {
+    margin: .45rem .5rem .45rem .5rem;
+    width: 5rem;
+    border-radius: .5rem;
+}
+
+.head-imgBg {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.head-imgBg>img {
+    margin: .3rem .4rem .4rem .4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
+}
+
+.tutor-title {
+    position: absolute;
+    top: .45rem;
+    left: 4.5rem;
+    width: 3rem;
+    height: 1.5rem;
+    background: rgba(147, 209, 36, 1);
+    border-radius: .75rem;
+    box-shadow: 0px 0px 0px rgba(NaN, NaN, NaN, 0.35);
+    font-size: 1.1rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.55rem;
+    text-align: center;
+}
+
+.visitor-title {
+    background: #DB6231;
+}
+
+.tutorTitle {
+    position: absolute;
+    top: .1rem;
+    left: 2.4rem;
+    width: 3rem;
+    height: 1.5rem;
+    background: rgba(147, 209, 36, 1);
+    border-radius: .75rem;
+    box-shadow: 0px 0px 0px rgba(NaN, NaN, NaN, 0.35);
+    font-size: 1.1rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.45rem;
+    text-align: center;
+}
+
+/*关注*/
+
+.attention {
+    position: absolute;
+    top: 1.8rem;
+    left: 14.8rem;
+    width: 4.4rem;
+    height: 1.7rem;
+    border: .1rem solid rgba(255, 255, 255, 1);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.434rem;
+}
+
+.action-bar {
+    position: absolute;
+    top: 17%;
+    right: 5%;
+    width: 21.5%;
+    height: 53%;
+    font-size: 1.3rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.action-bar ul {
+    /* padding: 5.5%; */
+    margin-bottom: 10.5%;
+}
+
+.action-bar img {
+    width: 2.9rem;
+    /* height: 2.9rem; */
+}
+
+.slideArea {
+    position: absolute;
+}
+
+/*课程评分*/
+
+.appraise {
+    position: absolute;
+    z-index: 330;
+    bottom: 0;
+    width: 100%;
+    height: 31.3rem;
+    background: url(../images/145.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.appraise-content {
+    width: 37rem;
+    height: 22.6rem;
+    margin: 7rem 2.1rem 2.1rem 2.25rem;
+    display: block;
+}
+
+.appraise-result {
+    width: 37rem;
+    height: 22.6rem;
+    margin: 7rem 2.1rem 2.1rem 2.25rem;
+    display: none;
+}
+
+.level-appraise {
+    top: 2.534rem;
+    left: 15.5rem;
+    width: 10.69rem;
+}
+
+.appraise-right {
+    left: 10.52rem;
+}
+
+.appraise-score {
+    position: absolute;
+    top: 8.72rem;
+    left: 3.35rem;
+    width: 34.8rem;
+    height: 4.2rem;
+    text-align: center;
+}
+
+.appraise-score>ul {
+    margin-left: 1.2rem;
+}
+
+.appraise-score>ul>li {
+    float: left;
+    margin-right: 1.1rem;
+}
+
+/*未选择时*/
+
+.score-key11 {
+    width: 7.15rem;
+    height: 3.7rem;
+    background: url(../images/146.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key22 {
+    width: 7.15rem;
+    height: 3.7rem;
+    background: url(../images/147.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key33 {
+    width: 7.15rem;
+    height: 3.7rem;
+    background: url(../images/148.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key44 {
+    width: 7.15rem;
+    height: 3.7rem;
+    background: url(../images/149.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*选择后*/
+
+.score-key1 {
+    background: url(../images/152.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key2 {
+    background: url(../images/153.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key3 {
+    background: url(../images/154.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.score-key4 {
+    background: url(../images/155.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-reward {
+    position: absolute;
+    top: 16.75rem;
+    left: 3.35rem;
+}
+
+.appraise-tips {
+    position: absolute;
+    left: 1.45rem;
+    top: 1.554rem;
+    width: 9.5rem;
+    height: 2.2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.2rem;
+}
+
+.reward-beans {
+    position: absolute;
+    left: 10.85rem;
+    width: 22.2rem;
+    height: 5.75rem;
+    background: transparent url("../images/151.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.beanInput {
+    background: transparent;
+    width: 14.375rem;
+    margin-left: 6.7rem;
+    font-size: 1.2rem;
+    margin-top: 2.57rem;
+}
+
+.beanInput::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.appraise-confirm {
+    position: absolute;
+    left: 13.25rem;
+    top: 24.5rem;
+    width: 15.4rem;
+    height: 4.8rem;
+    background: url(../images/150.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.58rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+/*评分结果*/
+
+.score-result {
+    position: relative;
+    left: 1.725rem;
+    top: 1.4rem;
+    width: 33.2rem;
+    height: 3.65rem;
+    background: url(../images/156.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 3.65rem;
+    font-size: 2rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(156, 122, 106, 1);
+}
+
+.score-result>span {
+    text-align: center;
+    line-height: 3.65rem;
+    font-size: 2rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(156, 122, 106, 1);
+}
+
+.score-detail {
+    position: relative;
+    top: .53rem;
+    left: 4.3rem;
+}
+
+.score-detail>li {
+    float: left;
+    width: 11.6rem;
+    margin: 1.4rem .1rem 0 2rem;
+}
+
+.score-detail img {
+    width: 7.15rem;
+    height: 3.7rem;
+}
+
+.score-detail span,
+.total-reward span {
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(67, 144, 67, 1);
+    text-indent: 0.5em;
+    vertical-align: middle;
+    line-height: 4.4rem;
+}
+
+.score-line {
+    position: relative;
+    top: 7.957rem;
+    left: 2.8rem;
+    width: 31rem;
+    height: .1rem;
+    opacity: 0.5;
+    border-radius: .1rem;
+    background: #E5C28A;
+}
+
+.score-line-reward {
+    top: 12.63rem;
+}
+
+.total-reward {
+    position: absolute;
+    left: 9rem;
+    width: 18.93rem;
+    height: 4.75rem;
+    top: 22.58rem;
+    font-size: 1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+    padding-left: .56rem;
+}
+
+.total-reward>ul>li {
+    float: left;
+    line-height: 4.75rem;
+    margin-top: 1.87rem;
+    margin-left: 1.3rem;
+}
+
+.total-reward>ul>li>label {
+    font-size: 1.2rem;
+}
+
+.total-reward>ul>li>img {
+    width: 4.5rem;
+    /* height: 4.75rem; */
+}
+
+/*课程分享*/
+
+.share-point {
+    position: absolute;
+    top: 4.8rem;
+    right: 6.3rem;
+    width: 8.9rem;
+    height: 8.25rem;
+    background: url(../images/157.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.share-tips {
+    position: absolute;
+    top: 11.95rem;
+    right: 3.3rem;
+    width: 25.15rem;
+    height: 6.95rem;
+    background: url(../images/158.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*分享结果*/
+
+.lesson-noshade {
+    display: none;
+}
+
+.share-result {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3.67rem;
+    text-align: center;
+    line-height: 3.67rem;
+    background: rgba(48, 161, 7, 1);
+    font-size: 1.3rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    z-index: 10000;
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+.lesson-h1 {
+    display: none;
+}
+
+/*课程留言*/
+
+/*导师介绍*/
+
+.tutor-bg,
+.lesson-text {
+    position: absolute;
+    z-index: 330;
+    bottom: 0;
+    width: 100%;
+    height: 45.16rem;
+    background: url(../images/159.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.leave-message-bg {
+    position: absolute;
+    z-index: 330;
+    bottom: 0;
+    width: 100%;
+    height: 45.1rem;
+    background: url(../images/159.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.tutor-head,
+.lesson-text-title {
+    position: absolute;
+    top: 5.35rem;
+    width: 100%;
+    height: 1.75rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 0.75), -1px 1px 2px rgba(21, 117, 6, 0.75), 0px 1px 2px rgba(21, 117, 6, 0.75), 0px -1px 2px rgba(21, 117, 6, 0.75);
+}
+
+.leave-message-title {
+    position: relative;
+    top: 5.3rem;
+    width: 100%;
+    height: 1.75rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 0.75), -1px 1px 2px rgba(21, 117, 6, 0.75), 0px 1px 2px rgba(21, 117, 6, 0.75), 0px -1px 2px rgba(21, 117, 6, 0.75);
+}
+
+.message-content {
+    position: relative;
+    top: 7.45rem;
+    left: 2.43rem;
+    width: 36.8rem;
+    height: 29.8rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.message-content>ul>li {
+    float: left;
+    border-bottom: 1px solid rgba(229, 194, 138, 0.3);
+    padding-bottom: .5rem;
+}
+
+.releaseContent {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 510;
+    width: 100%;
+    height: 4.9rem;
+    background: #FFFFFF;
+}
+
+.replayContent {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 510;
+    width: 100%;
+    height: 4.9rem;
+    background: #FFFFFF;
+}
+
+.message-text1,
+.message-text2 {
+    position: absolute;
+    z-index: 510;
+    line-height: 1.78rem;
+    width: 83.5%;
+    height: 3.9rem;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: .85rem 0 0 .95rem;
+    overflow: hidden;
+    border: .1rem solid rgba(153, 153, 153, 1);
+    border-radius: .5rem;
+    margin: .5rem 0 0 1.2rem;
+    overflow-y: auto;
+}
+
+.release-message {
+    position: absolute;
+    right: 1.45rem;
+    top: .85rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    z-index: 510;
+    color: rgba(85, 50, 8, 1);
+    background: url(../images/258.png) no-repeat;
+    background-size: 100% 100%;
+    border: .1rem solid rgba(229, 194, 138, 0.3);
+}
+
+.message-btn {
+    position: absolute;
+    bottom: 1.334rem;
+    margin-left: 13.25rem;
+    text-align: center;
+    line-height: 4.8rem;
+    width: 15.4rem;
+    height: 4.8rem;
+    background: url(../images/118.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 0.75), -1px 1px 2px rgba(21, 117, 6, 0.75), 0px 1px 2px rgba(21, 117, 6, 0.75), 0px -1px 2px rgba(21, 117, 6, 0.75);
+    z-index: 500;
+}
+
+.leave-content {
+    /* padding-bottom: 1rem; */
+    position: relative;
+    width: 36.5rem;
+}
+
+.avatar-message {
+    position: relative;
+    display: inline-block;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.avatar-message>img {
+    margin: .4rem .4rem .4rem .4rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: .5rem;
+}
+
+.tourist-name {
+    position: relative;
+    display: inline-block;
+    top: .4rem;
+    left: .56rem;
+    line-height: 4.8rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+}
+
+.leave-message-time {
+    position: relative;
+    float: right;
+    margin: 2.2rem 1.3rem 0 0;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+}
+
+.leave-message-detail {
+    position: relative;
+    font-size: 1.3rem;
+    left: 5.36rem;
+    top: 0;
+    width: 30.27rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.reply-content {
+    position: relative;
+    left: 5.36rem;
+    width: 27.27rem;
+}
+
+.reply-message-detail {
+    position: relative;
+    top: 0;
+    left: 5rem;
+    width: 24.925rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+/*导师详情*/
+
+.tutor-avatar {
+    position: relative;
+    width: 100%;
+    height: 6.05rem;
+    text-align: center;
+}
+
+.tutor-avatar>p {
+    line-height: 2.3345rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.head-bg {
+    margin-left: 17.75rem;
+    width: 6.05rem;
+    height: 6.05rem;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: .5rem;
+}
+
+.head-bg>img {
+    margin: .5rem .5rem .5rem .5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+}
+
+.tutor-attention {
+    position: absolute;
+    text-align: center;
+    line-height: 1.8rem;
+    width: 4.35rem;
+    height: 1.8rem;
+    background: rgba(147, 209, 36, 1);
+    border-radius: .9rem;
+    top: 4.5rem;
+    left: 21.5rem;
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tutor-infor {
+    position: relative;
+    width: 36.5rem;
+    top: 3rem;
+    left: 2.5rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.rem;
+    padding-bottom: 1.67rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, .5);
+}
+
+.lesson-tutorInfor {
+    position: relative;
+    top: .13rem;
+    line-height: 1.8rem;
+}
+
+/* 我的关注 */
+
+.follow-infor {
+    position: relative;
+    width: 34.5rem;
+    top: 5.96rem;
+    left: 2rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.follow-tutorInfor {
+    position: relative;
+    top: .13rem;
+    line-height: 1.8rem;
+    min-height: 1rem;
+    max-height: 13.27rem;
+}
+
+.lesson-maxNum {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.infor-read {
+    position: absolute;
+    bottom: 1.6rem;
+    right: .1875rem;
+    color: rgba(48, 160, 7, 1);
+    display: none;
+}
+
+.infor-close {
+    position: absolute;
+    bottom: .4rem;
+    right: .1875rem;
+    color: rgba(48, 160, 7, 1);
+    display: none;
+}
+
+.follow-read {
+    position: absolute;
+    bottom: -.18rem;
+    right: .33rem;
+    color: rgba(48, 160, 7, 1);
+    display: none;
+}
+
+.follow-close {
+    position: absolute;
+    bottom: -1.69rem;
+    right: .33rem;
+    color: rgba(48, 160, 7, 1);
+    display: none;
+}
+
+.infor-read>img,
+.follow-read>img,
+.infor-close>img,
+.follow-close>img {
+    width: 1.2rem;
+}
+
+.tutor-detail {
+    position: relative;
+    width: 100%;
+    height: 33.35rem;
+    top: 9.77rem;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tutor-bg ul {
+    position: relative;
+    left: 2.3rem;
+    top: 4.3rem;
+    text-align: center;
+}
+
+.tutor-bg ul>li {
+    float: left;
+    margin: .33rem 1rem;
+}
+
+.album-name {
+    width: 10.25rem;
+    height: 13.85rem;
+}
+
+.album-name>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*专辑名称*/
+
+.album-top {
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    width: 11rem;
+    height: 8rem;
+}
+
+.album-top>img {
+    width: 11rem;
+    height: 8rem;
+}
+
+.album-text {
+    position: relative;
+    text-align: left;
+    left: 13rem;
+    top: -3.67rem;
+    width: 24.1rem;
+    height: 2.4rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(149, 104, 38, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.album-detail {
+    position: relative;
+    left: 1rem;
+    top: 1.67rem;
+    width: 36rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.67rem;
+    padding-bottom: .667rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, .5);
+}
+
+.lesson-title-list {
+    position: relative;
+    top: 1.74rem;
+    width: 36rem;
+    height: 41.5rem;
+    margin: 1.25rem 1.25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.noLesson-content {
+    position: absolute;
+    top: 14.25rem;
+    display: none;
+}
+
+.lesson-title {
+    height: 6.75rem;
+    margin-bottom: 1rem;
+}
+
+.list-num {
+    width: 3.8rem;
+    height: 6.75rem;
+    background: #A8D535;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 6.75rem;
+}
+
+.lesson-list-detail {
+    position: relative;
+    left: 3.8rem;
+    top: -6.77rem;
+    width: 32rem;
+    height: 6.75rem;
+    background: #F7E6A9;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.lesson-list-title {
+    height: 3.37rem;
+    width: 34.6rem;
+    line-height: 4.5rem;
+}
+
+.lesson-list-name {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.45rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.lesson-operate {
+    position: absolute;
+    top: 1.7rem;
+    right: .85rem;
+    width: 4.85rem;
+    height: 2.95rem;
+    background: url(../images/233.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 2.95rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 1);
+}
+
+.lesson-play {
+    position: absolute;
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius: .85rem;
+    width: 5rem;
+    height: 1.7rem;
+    background: #FFF7DF;
+    top: 1.25rem;
+    right: 1.45rem;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(214, 0, 14, 1);
+    z-index: 2000;
+}
+
+.lesson-list-tab {
+    position: absolute;
+    left: 1.45rem;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.lesson-list-tab>ul>li {
+    float: left;
+    padding-right: 2.875rem;
+}
+
+.lesson-list-tab>ul>li>img {
+    width: 2.5rem;
+}
+
+.lesson-playing {
+    color: rgba(48, 160, 7, 1);
+}
+
+.lesson-locked {
+    position: absolute;
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius: .85rem;
+    width: 5rem;
+    height: 1.7rem;
+    background: #FFF7DF;
+    top: 1.25rem;
+    right: 1.45rem;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(149, 104, 38, 1);
+    z-index: 2000;
+}
+
+.lesson-playing>img,
+.lesson-locked>img {
+    width: 1rem;
+}
+
+.alllock-btn {
+    position: absolute;
+    bottom: 1.15rem;
+    left: 1.03rem;
+    width: 32.4rem;
+    height: 4.84rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.84rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.album-add,
+.course-add {
+    position: absolute;
+    bottom: 1.15rem;
+    left: 3.3rem;
+    width: 31.85rem;
+    height: 4.84rem;
+    background: url(../images/194.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.84rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 0.75), -1px 1px 2px rgba(21, 117, 6, 0.75), 0px 1px 2px rgba(21, 117, 6, 0.75), 0px -1px 2px rgba(21, 117, 6, 0.75);
+}
+
+/*新增专辑*/
+
+.album-add-confirm {
+    top: 36.67rem;
+    width: 25.85rem;
+    left: 6rem;
+}
+
+/*课程文字*/
+
+.lesson-text-inner {
+    position: absolute;
+    padding: 1.25rem;
+    width: 38.9rem;
+    height: 35.8rem;
+    left: 1.25rem;
+    bottom: 1.1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    overflow: hidden;
+    overflow-y: auto;
+    word-break: break-all;
+}
+
+.imgP>img {
+    max-width: 36.5rem !important;
+    margin: 1rem 0 1rem 0;
+}
+
+.lesson-intr {
+    margin-top: 1rem;
+    width: 36.5rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.8rem;
+    word-break: break-all;
+}
+
+/*举报内容*/
+
+.report-tab {
+    position: absolute;
+    width: 31.8rem;
+    height: 8rem;
+    left: 4.6rem;
+    top: 7.27rem;
+}
+
+.report-tab>ul>li {
+    float: left;
+    margin: .8rem 1.6rem;
+}
+
+.report-option {
+    width: 12.65rem;
+    height: 3.55rem;
+    background: url(../images/167.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 3.55rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(126, 126, 126, 1);
+}
+
+.report-option1 {
+    width: 12.65rem;
+    height: 3.55rem;
+    background: url(../images/168.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-introduction {
+    position: absolute;
+    z-index: 330;
+    bottom: 0;
+    width: 100%;
+    height: 45.16rem;
+    background: url(../images/169.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-introduction-title {
+    position: absolute;
+    top: 6.68rem;
+    width: 100%;
+    height: 1.75rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.lesson-introduction-inner {
+    position: absolute;
+    width: 38.8rem;
+    height: 33.75rem;
+    left: 1.25rem;
+    bottom: 1.1rem;
+    padding: 1.25rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.lesson-introduction-inner>h1 {
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+}
+
+/*课程解锁*/
+
+.lock-shade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 360;
+    width: 100%;
+    height: 57%;
+    overflow: hidden;
+}
+
+.progress-locked {
+    position: relative;
+    width: 6.3rem;
+    height: 6.3rem;
+    left: 17.5rem;
+    bottom: -77%;
+    background: url(../images/170.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.progress-locked>span {
+    position: absolute;
+    display: inline-block;
+    color: #956826;
+    font-weight: 600;
+    top: 0;
+    font-size: 1rem;
+    margin: 3.9rem 2.8rem;
+}
+
+.locked-shade {
+    position: absolute;
+    top: 44%;
+    left: 77.5%;
+    z-index: 9999;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 2.5rem;
+    background: url(../images/171.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+
+/*专辑名称-系列名称*/
+
+.series-top,
+.recharge-top,
+.manage-top {
+    position: relative;
+    top: .14rem;
+    width: 100%;
+    height: 9rem;
+}
+
+.series-top>img,
+.recharge-top>img,
+.manage-top>img {
+    width: 7.4rem;
+    height: 8.05rem;
+    margin: 2.7rem 0 0 13.8rem;
+}
+
+.series-top>span,
+.recharge-top>span,
+.manage-top>span {
+    position: absolute;
+    top: 3rem;
+    font-size: 2.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(109, 62, 20, 1);
+    line-height: 8.05rem;
+}
+
+.series-name {
+    position: relative;
+    top: 1.7rem;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-indent: 1.2em;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(149, 104, 38, 1);
+}
+
+.series-title-list {
+    position: relative;
+    top: 0.5rem;
+    width: 32rem;
+    margin: 1.25rem 1.25rem;
+}
+
+.series-inner {
+    height: 5.42rem;
+}
+
+.series-num {
+    height: 5.42rem;
+    line-height: 5.42rem;
+}
+
+.serise-list {
+    position: relative;
+    height: 5.42rem;
+    top: -5.42rem;
+}
+
+.serise-title {
+    position: absolute;
+    width: 18.75rem;
+    left: 1.5rem;
+    top: 7.42rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.serise-beans {
+    position: absolute;
+    height: 2.5rem;
+    top: 7rem;
+    left: 22.35rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(85, 50, 8, 1);
+}
+
+.serise-beans>img {
+    width: 2.3rem;
+    height: 2.5rem;
+}
+
+/*智慧豆充足*/
+
+.series-hasbeans {
+    position: relative;
+    top: .727rem;
+    left: 7.68rem;
+    width: 22.9rem;
+    height: 6.7rem;
+    text-align: center;
+}
+
+.hasbeans-btn {
+    margin: 4.85rem 0 0 3.85rem;
+    width: 15.4rem;
+    height: 4.85rem;
+    background: url(../images/173.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.85rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 0.75), -1px 1px 2px rgba(21, 117, 6, 0.75), 0px 1px 2px rgba(21, 117, 6, 0.75), 0px -1px 2px rgba(21, 117, 6, 0.75);
+}
+
+.series-hasbeans>span {
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.25rem;
+}
+
+.nobeans-btn {
+    margin: 0 auto;
+    width: 19.8rem;
+    height: 4.85rem;
+    line-height: 4.85rem;
+    background: url(../images/174.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.6rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(206, 33, 23, 0.75);
+}
+
+/*解锁成功*/
+
+.unlock-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    padding-top: 18.6rem;
+    padding-left: 6.54rem;
+}
+
+.unlock-frame {
+    width: 27.45rem;
+    height: 19.9rem;
+    background: url(../images/120.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.25rem;
+}
+
+.unlock-frame>span {
+    position: relative;
+    top: 4.5rem;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.unlock-frame img {
+    width: 4rem;
+}
+
+.unlock-btn {
+    position: relative;
+    top: 4.2rem;
+    left: 6.1rem;
+    line-height: 4.85rem;
+    width: 15.4rem;
+    height: 4.85rem;
+    background: url(../images/173.png) no-repeat;
+    background-size: 100% 100%;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+/* 掉线 */
+.otherPlace {
+    position: absolute;
+    left: 16%;
+    top: 37%;
+    width: 27.45rem;
+    height: 19.9rem;
+    background: url(../images/120.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    line-height: 2.25rem;
+    z-index: 99999;
+    display: none;
+}
+
+.otherPlace>span {
+    margin-top: 7rem;
+    color: rgba(56, 141, 56, 1);
+}
+
+.otherPlace>.placeBtn {
+    position: absolute;
+    bottom: 5rem;
+    left: 8.5rem;
+    line-height: 4rem;
+    width: 10rem;
+    height: 4rem;
+    color: #FFFFFF;
+    background: url(../images/118.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*钱包*/
+.recharge-cost {
+    position: absolute;
+    top: 3.05rem;
+    right: 1.5rem;
+    width: 5.45rem;
+    height: 5.45rem;
+    background: url(../images/179.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.pod-top {
+    position: relative;
+    top: 1%;
+    width: 100%;
+    height: 10.25rem;
+    z-index: 350;
+    background: url(../images/176.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.purse-center {
+    position: relative;
+    left: 1.875rem;
+    top: -7%;
+    width: 90%;
+    height: 75%;
+    z-index: 300;
+    background: url(../images/177.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pod-bottom {
+    position: relative;
+    top: -17%;
+    width: 100%;
+    height: 10.5rem;
+    z-index: 350;
+    background: url(../images/178.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.recharge-num>span {
+    position: relative;
+    top: 2.4rem;
+    left: 12.5rem;
+    font-size: 2.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(67, 144, 67, 1);
+}
+
+.recharge-num img {
+    width: 7.4rem;
+}
+
+.recharge-btn {
+    width: 92%;
+    height: 4.15rem;
+    margin-left: 1.5rem;
+    padding: 3rem 4.96rem 2.134rem 4.96rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.recharge-true {
+    float: left;
+    width: 10.4rem;
+    height: 4.15rem;
+    background: url(../images/180.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.15rem;
+}
+
+.recharge-false {
+    float: right;
+    width: 10.4rem;
+    height: 4.15rem;
+    background: url(../images/181.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 4.15rem;
+}
+
+.recharge-inner {
+    position: relative;
+    padding-top: .3335rem 0 .3335rem 0;
+    top: 1.14rem;
+    left: 2.7rem;
+    width: 86%;
+    height: 67.9%;
+    background: rgba(255, 247, 223, 1);
+    border-radius: 1rem;
+    overflow-y: auto;
+}
+
+.recharge-detail {
+    position: relative;
+    top: .9rem;
+    left: 1rem;
+    width: 93.5%;
+    height: 3.5rem;
+    color: #553208;
+    background: rgba(235, 244, 137, 1);
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.recharge-detail img {
+    width: 2.7rem;
+}
+
+.recharge-detail table {
+    position: absolute;
+    left: .5rem;
+    width: 30rem;
+    top: -.5rem;
+}
+
+/*充值记录*/
+
+.recharge-record {
+    position: relative;
+    top: .9rem;
+    left: 1.07rem;
+    width: 35.5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    background: rgba(235, 244, 137, 1);
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+    /*display: none;*/
+}
+
+.record-tab1 {
+    position: absolute;
+    left: 1.7rem;
+    width: 7.6rem;
+    height: 2.5rem;
+    line-height: 3.84rem;
+}
+
+.record-tab1>img {
+    width: 2.3rem;
+    vertical-align: top;
+}
+
+.record-tab2 {
+    position: absolute;
+    top: .9rem;
+    left: 10.875rem;
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.record-tab3 {
+    position: absolute;
+    top: .9rem;
+    right: .95rem;
+    /*width: 20.36vw;*/
+    height: 2.5rem;
+}
+
+/*无充值记录*/
+
+.no-recharge,
+.dollar-selected {
+    position: absolute;
+    top: 17.62rem;
+    left: 10.65rem;
+    width: 17.7rem;
+    height: 15.7rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    display: none;
+}
+
+.withdraw-selected {
+    position: absolute;
+    top: 17.62rem;
+    left: 11.65rem;
+    width: 12.7rem;
+    height: 15.7rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.no-recharge img,
+.dollar-selected img,
+.withdraw-selected img {
+    width: 12.7rem;
+}
+
+/*充值方式*/
+
+.recharge-money {
+    position: absolute;
+    height: 1.5rem;
+    top: 2.05rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(58, 141, 18, 0.6);
+    padding: 0 .56rem 2.3rem .56rem;
+}
+
+.recharge-checked {
+    color: rgba(58, 141, 18, 1);
+    border-bottom: .4rem #3A8D12 solid;
+    opacity: 1;
+}
+
+#recharge-reminbi {
+    left: 5.8rem;
+}
+
+#recharge-dollar {
+    right: 5.55rem;
+}
+
+#recharge-line {
+    position: absolute;
+    width: 36rem;
+    height: .1rem;
+    background: rgba(58, 141, 18, 1);
+    opacity: 0.5;
+    top: 4.55rem;
+    left: 1rem;
+}
+
+.recharge-value {
+    position: absolute;
+    top: 5.67rem;
+    left: 1.4rem;
+    width: 36rem;
+    height: 10.5rem;
+}
+
+.recharge-value ul>li {
+    float: left;
+    text-align: center;
+    margin: .53rem .84rem;
+    padding: .3335rem;
+}
+
+.initial {
+    background: rgba(244, 232, 201, 1);
+    box-shadow: 0px 1px 20px 0px rgba(244, 228, 118, 0.5) inset;
+    border-radius: 1rem;
+    width: 10.05rem;
+    height: 4.7rem;
+}
+
+.initial>h1 {
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(34, 34, 34, 1);
+}
+
+.initial>p {
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(222, 146, 0, 1);
+}
+
+.selected {
+    background: rgba(58, 141, 18, 1);
+}
+
+.selected>h1 {
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+}
+
+.selected>p {
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+}
+
+.recharge-want {
+    position: absolute;
+    top: 17.9rem;
+    left: 1.25rem;
+    width: 35.5rem;
+    height: 4.8rem;
+}
+
+.recharge-input {
+    position: absolute;
+    width: 35.5rem;
+    height: 4.8rem;
+    font-size: 1.3rem;
+    background: url(../images/190.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 200;
+    color: #956826;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+}
+
+.recharge-input::-webkit-input-placeholder {
+    color: #D9AC6A;
+}
+
+.recharge-input-checked {
+    background: url(../images/260.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.recharge-want img {
+    position: absolute;
+    left: 9.5rem;
+    top: 1.55rem;
+    width: 1.75rem;
+    z-index: 300;
+}
+
+.recharge-want p {
+    position: absolute;
+    right: 13rem;
+    top: 1.55rem;
+    width: 1.75rem;
+    z-index: 300;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 600;
+    color: rgba(34, 34, 34, 1);
+}
+
+.recharge-confirm {
+    position: absolute;
+    top: 27.3rem;
+    left: 6.1rem;
+    width: 24.3rem;
+    height: 4.95rem;
+    background: url(../images/192.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.95rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+/*充值方式*/
+
+.recharge-sum {
+    position: absolute;
+    top: 12.3rem;
+    left: 1.05rem;
+    width: 35.5rem;
+    height: 4.5rem;
+    border-top: 1px solid rgba(229, 194, 138, 1);
+    border-bottom: 1px solid rgba(229, 194, 138, 1);
+    border-color: rgba(229, 194, 138, .5);
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(105, 56, 12, 1);
+}
+
+.recharge-sum label {
+    float: left;
+    line-height: 4.5rem;
+}
+
+.recharge-sum span {
+    float: right;
+    line-height: 4.5rem;
+}
+
+.recharge-type {
+    position: absolute;
+    top: 30rem;
+    left: 4.05rem;
+    width: 30rem;
+    height: 10.65rem;
+}
+
+.recharge-method {
+    width: 30rem;
+    height: 4.85rem;
+    text-align: center;
+    line-height: 4.85rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+    display: block;
+}
+
+.recharge-method img {
+    width: 2.5rem;
+}
+
+.wechat {
+    position: absolute;
+    top: 0;
+    background: url(../images/194.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.alipay {
+    position: absolute;
+    bottom: 0;
+    background: url(../images/196.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*支付成功*/
+
+.recharge-successed {
+    position: absolute;
+    height: 24.55rem;
+    width: 25.85rem;
+    left: 6.5rem;
+    top: 25.6rem;
+    text-align: center;
+}
+
+.recharge-successed>img {
+    width: 15.7rem;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0s;
+    -moz-animation-duration: 0s;
+    -ms-animation-duration: 0s;
+    -o-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+    /*定义循环资料，infinite为无限次*/
+}
+
+/* 放大缩小 */
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.1);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes pulse {
+    0% {
+        -o-transform: scale(1);
+    }
+
+    50% {
+        -o-transform: scale(1.1);
+    }
+
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.successed-btn {
+    position: absolute;
+    bottom: 0;
+    width: 25.85rem;
+    height: 4.85rem;
+    text-align: center;
+    line-height: 4.85rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+    background: url(../images/194.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*个人中心*/
+
+.personal-leave {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/199.png") no-repeat center;
+    background-size: 100% 100%;
+    top: .95rem;
+    right: .8rem;
+    z-index: 9999;
+}
+
+#personal-title {
+    position: absolute;
+    display: inline-block;
+    width: 9.35rem;
+    height: 1.75rem;
+    left: 16.07rem;
+    top: 1.55rem;
+    font-size: 2rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    color: rgba(254, 254, 254, 1);
+    text-align: center;
+    z-index: 400;
+    text-shadow: 1px 2px 2px rgba(211, 11, 1, 1), -1px 2px 2px rgba(211, 11, 1, 1), 0px 2px 2px rgba(211, 11, 1, 1), 0px -2px 2px rgba(211, 11, 1, 1);
+}
+
+.personal-center {
+    position: absolute;
+    height: 86%;
+    width: 100%;
+    background: url(../images/200.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 350;
+}
+
+.game-ranger {
+    position: absolute;
+    top: 15%;
+    left: 4.2rem;
+    width: 23.85rem;
+    height: 8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: PingFang-SC-Medium;
+    color: rgba(85, 50, 8, 1);
+}
+
+.ranger-title {
+    background: #F05E15;
+}
+
+/*未认证*/
+
+.no-certified {
+    position: absolute;
+    top: 2.87rem;
+    width: 4.4rem;
+    height: 1.7rem;
+    border: 1px solid rgba(219, 98, 49, 1);
+    border-radius: .85rem;
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(219, 98, 49, 1);
+    line-height: 1.7rem;
+}
+
+/*已认证*/
+
+.certified {
+    width: 4.4rem;
+    height: 1.7rem;
+    border: 1px solid rgba(85, 50, 8, 1);
+    border-radius: .85rem;
+    font-size: 1.2rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(85, 50, 8, 1);
+    line-height: 1.7rem;
+}
+
+.setting {
+    position: absolute;
+    top: 18%;
+    right: 5.5rem;
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/202.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.personal-wealth {
+    position: absolute;
+    top: 24%;
+    left: 6rem;
+    width: 31rem;
+    height: 8.95rem;
+    font-size: 1.2rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.personal-wealth>ul>li {
+    float: left;
+    margin: 1.5rem 2rem;
+}
+
+.personal-wealth img {
+    width: 6rem;
+}
+
+.wealth-value {
+    position: relative;
+    top: -1.15rem;
+    left: .59rem;
+    width: 4.65rem;
+    height: 2.6rem;
+    background: url(../images/206.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 2.33rem;
+}
+
+.my-tabs {
+    position: absolute;
+    top: 40.5%;
+    left: 6rem;
+    font-size: 1.5rem;
+    font-family: Adobe Heiti Std R;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.my-tabs>ul>li {
+    float: left;
+    margin: .5rem .5rem;
+    padding: 1.5rem 0;
+    width: 13.5rem;
+    height: 12.5rem;
+    background: url(../images/211.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.my-tabs label {
+    padding: 1.22rem;
+}
+
+.my-tabs img {
+    width: 6.7rem;
+}
+
+.login-out {
+    position: absolute;
+    top: 90%;
+    left: 14.5rem;
+    width: 12.4rem;
+    height: 4.45rem;
+    background: url(../images/212.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.45rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(102, 102, 102, 1), -1px 2px 2px rgba(102, 102, 102, 1), 0px 2px 2px rgba(102, 102, 102, 1), 0px -2px 2px rgba(102, 102, 102, 1);
+}
+
+/*实名认证*/
+
+.realname-body,
+.personal-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(255, 104, 63, 1);
+}
+
+.realname-container,
+.personal-container,
+.personal-area-container {
+    position: relative;
+    top: .5rem;
+    left: .6rem;
+    width: 97%;
+    height: 98.5%;
+    background: rgba(252, 230, 50, 1);
+    border-radius: 3%;
+}
+
+.personal-area {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 104, 63, 1);
+    display: none;
+}
+
+.realname-back,
+.personal-goback {
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/213.png") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+.personal-area-back {
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../images/213.png") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 9999;
+    top: -4.4rem;
+    left: -.3rem;
+    z-index: 9999;
+}
+
+.realname-submit,
+.personal-submit {
+    position: relative;
+    top: 6.8rem;
+    left: 6rem;
+    width: 26.4rem;
+    height: 4.85rem;
+    background: url(../images/214.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.85rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(239, 91, 20, 0.75);
+}
+
+.submit-tips {
+    position: absolute;
+    top: 16.3rem;
+    left: 6.7rem;
+    width: 24.7rem;
+    height: 11.6rem;
+    background: url(../images/215.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 11.6rem;
+    font-size: 1.3rem;
+    /*display: none;*/
+}
+
+/*身份证照片*/
+
+.card-photo {
+    position: absolute;
+    left: 1.5rem;
+    top: 3.5rem;
+    width: 35.5rem;
+    height: 20.7rem;
+    background: url(../images/216.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*身份证照片样式重定义*/
+
+.card-photo1 {
+    position: absolute;
+    left: 1.5rem;
+    top: 3.5rem;
+    width: 35.5rem;
+    height: 20.7rem;
+}
+
+.card-submit {
+    position: relative;
+    top: 27.37rem;
+}
+
+/*提交照片*/
+
+.card-photo>img {
+    width: 35.5rem;
+    height: 20.7rem;
+}
+
+.card-photo1>img {
+    width: 35.5rem;
+    height: 20.7rem;
+}
+
+.submit-cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.9rem;
+    height: 2.9rem;
+    background: url(../images/217.png) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 9999;
+}
+
+.education-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40.2rem;
+    background: url(../images/218.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(105, 56, 12, 1);
+}
+
+.education-container>ul {
+    bottom: 0;
+    padding: 0 2rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.education-container li {
+    height: 4.5rem;
+    border-bottom: .1rem solid #CFA972;
+    border-color: rgba(229, 194, 138, 0.3);
+    line-height: 2rem;
+    padding-top: 1.6rem;
+}
+
+.education-container>ul>li:last-child {
+    border-bottom: none;
+}
+
+.education-enter {
+    position: absolute;
+    top: 2.55rem;
+    right: 5.9rem;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.education-close {
+    position: absolute;
+    top: 2.55rem;
+    right: .5rem;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/42.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.no-attention,
+.no-lessons {
+    display: none;
+    font-size: 1.4rem;
+}
+
+.infor-waitting {
+    font-size: 1.4rem;
+}
+
+#waitting-img {
+    position: absolute;
+    top: 15rem;
+    left: 10.9rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    background: url(../images/219.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*个人中心*/
+
+.personal-list>.head-pic {
+    height: 9rem;
+}
+
+.personal-list>.head-pic div {
+    height: 6.3rem;
+    width: 6.3rem;
+    background: url(../images/31.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.personal-list>.head-pic div>img {
+    width: 6.3rem;
+    border-radius: .5rem;
+}
+
+.personal-list>.head-pic>p {
+    margin-top: 1.8rem;
+}
+
+/*个人简介*/
+
+.present-body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(253, 242, 152, 1) 1%, rgba(245, 203, 139, 1) 100%);
+    overflow: hidden;
+}
+
+.present-detail {
+    width: 35rem;
+    height: 55.1rem;
+    margin: 3rem 1.6rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+    line-height: 2.3rem;
+    overflow: auto;
+    background: transparent;
+}
+
+.present-top {
+    top: 2.2rem;
+}
+
+/*设置*/
+
+.personal-setting,
+.lesson-add-method {
+    position: absolute;
+    top: 18.95rem;
+    width: 100%;
+    height: 24.3rem;
+    background: url(../images/220.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.personal-setting>h1,
+.lesson-add-method>h1 {
+    text-align: center;
+    line-height: 9.4rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 0.75), -1px 2px 2px rgba(21, 117, 6, 0.75), 0px 2px 2px rgba(21, 117, 6, 0.75), 0px -2px 2px rgba(21, 117, 6, 0.75);
+}
+
+.personal-setting-detail {
+    position: absolute;
+    top: 7rem;
+    left: 4.6rem;
+    width: 31.8rem;
+    height: 13.02rem;
+}
+
+.personal-setting-list>li:last-child {
+    border-bottom: none;
+}
+
+.personal-close,
+.lesson-add-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.language-tips,
+.internet-tips {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3.67rem;
+    text-align: center;
+    line-height: 3.67rem;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.3rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    z-index: 10000;
+    display: none;
+}
+
+/*我的关注*/
+
+.attention-body {
+    width: 100%;
+    height: 100%;
+    background: rgba(197, 128, 6, 1);
+    overflow: hidden;
+}
+
+.attention-list {
+    position: relative;
+    width: 95%;
+    height: 89.66%;
+    top: 4.9rem;
+    left: 1rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.attention-list>li {
+    position: relative;
+    top: .667rem;
+    left: 1.6875rem;
+    height: 7.07rem;
+    width: 34.5rem;
+    border-bottom: .1rem solid #CFA972;
+    border-color: rgba(229, 194, 138, 0.5);
+}
+
+.attention-img {
+    position: relative;
+    bottom: -.15rem;
+    width: 6.3rem;
+    height: 6.3rem;
+    background: url(../images/111.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.attention-list>li p {
+    position: relative;
+    left: 7.5rem;
+    top: -4rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(85, 50, 8, 1);
+}
+
+.attention-img>img {
+    position: absolute;
+    top: .6rem;
+    left: .56rem;
+    width: 5.04rem;
+    border-radius: .5rem;
+}
+
+.attention-nosign {
+    position: relative;
+    top: -6.14rem;
+    left: 27.5rem;
+    width: 5.5rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    border: .1rem solid rgba(219, 98, 49, 1);
+    color: rgba(219, 98, 49, 1);
+    border-radius: 1.1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.attention-signed {
+    color: rgba(255, 255, 255, 1);
+    background: #DB6231;
+}
+
+#attentionImg {
+    position: absolute;
+    top: 18.3rem;
+    left: 12.26rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    background: url(../images/221.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*关注详情*/
+
+.attention-content {
+    position: relative;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 63.7rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.attention-list-content {
+    position: relative;
+    top: 6.3rem;
+    width: 37rem;
+    max-height: 35.7rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.attention-album-list {
+    position: relative;
+    left: 1rem;
+    top: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+}
+
+.attention-album-list>li {
+    float: left;
+    margin: .667rem 1rem;
+    text-align: left;
+}
+
+.attention-tutor-avatar {
+    position: relative;
+    width: 38rem;
+    top: 2.4rem;
+    height: 6.05rem;
+}
+
+.head-bg2 {
+    margin: 0 16rem;
+}
+
+.attention-tutor-avatar>p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(85, 50, 8, 1);
+    line-height: 3rem;
+}
+
+.attention-album-name {
+    width: 9.9rem;
+    height: 7.2rem;
+}
+
+.attention-album-name>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*我的课程*/
+
+.mylessons-body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(191, 218, 143, 1) 0%, rgba(254, 228, 113, 1) 100%);
+}
+
+.mylessons-content {
+    position: relative;
+    top: 4rem;
+    left: 0.8rem;
+    width: 36.5rem;
+    height: 85%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.mylesson-list>li {
+    float: left;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lesson-lock {
+    position: relative;
+    top: 2rem;
+    left: 11rem;
+    width: 4rem;
+}
+
+.lesson-lock img {
+    width: 1.75rem;
+}
+
+.mylesson-shade {
+    position: relative;
+    bottom: 6rem;
+    height: 6rem;
+    width: 15.2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(176, 178, 180, .2) 100%);
+}
+
+/*无课程*/
+
+#lessons-img {
+    position: relative;
+    top: 15rem;
+    left: 13rem;
+    width: 12.7rem;
+    height: 12.7rem;
+    background: url(../images/223.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#lessons-text {
+    position: relative;
+    text-align: center;
+    top: 16.5rem;
+    left: 11rem;
+    width: 16.3rem;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+/*课程管理*/
+
+.manage-box>p {
+    margin: 1.45rem 0 2.5rem 1.5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(109, 62, 20, 1);
+}
+
+.manage-box>hr {
+    border: .1rem solid rgba(229, 194, 138, .5);
+    width: 36rem;
+    margin: 0 1.05rem;
+}
+
+.album-list {
+    position: relative;
+    width: 37rem;
+    height: 40.56rem;
+    overflow: auto;
+}
+
+.noAlbum-content {
+    position: relative;
+    width: 38.5rem;
+    height: 40.56rem;
+    overflow: auto;
+    display: none;
+}
+
+.album-manage {
+    position: relative;
+    width: 36rem;
+    height: 6.6rem;
+    left: .94rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.5);
+}
+
+.album-href>img {
+    position: absolute;
+    margin: 1rem;
+    width: 6.15rem;
+    height: 4.5rem;
+}
+
+.album-href>h1 {
+    position: absolute;
+    left: 8.65rem;
+    top: 1.2rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(149, 104, 38, 1);
+}
+
+.album-href>p {
+    position: absolute;
+    left: 8.65rem;
+    top: 3.8rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+}
+
+.manage-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: .3rem;
+    width: 8.25rem;
+    height: 3.4rem;
+    background: url(../images/224.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 3.4rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+/*还没有专辑*/
+
+#no-album-img,
+#no-lesson-img,
+#no-message-img {
+    position: relative;
+    top: 7.3rem;
+    margin: 0 13rem;
+    width: 12.7rem;
+    height: 12.7rem;
+}
+
+#no-album-img>img,
+#no-lesson-img>img,
+#no-message-img>img {
+    height: 12.7rem;
+    width: 12.7rem;
+}
+
+#no-album-text,
+#no-lesson-text,
+#no-message-text {
+    position: relative;
+    top: 7.3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+/*专辑操作项*/
+
+.album-operate {
+    position: absolute;
+    width: 21.6rem;
+    height: 7.75rem;
+    background: url(../images/226.png) no-repeat;
+    background-size: 100% 100%;
+    top: -.43rem;
+    left: 6.5rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    /* z-index: 9999; */
+    display: none;
+}
+
+.lessonOperate-option {
+    position: absolute;
+    width: 21.6rem;
+    height: 7.75rem;
+    background: url(../images/226.png) no-repeat;
+    background-size: 100% 100%;
+    top: -.43rem;
+    left: 5.875rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    z-index: 9999;
+    display: none;
+}
+
+.operate-del {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 9.45rem;
+    height: 5.75rem;
+    line-height: 5.75rem;
+    color: rgba(219, 98, 49, 1);
+}
+
+.operate-edit {
+    position: absolute;
+    right: 1.4rem;
+    top: 1rem;
+    width: 9.45rem;
+    height: 5.75rem;
+    line-height: 5.75rem;
+    color: rgba(81, 170, 23, 1);
+}
+
+.operate-del>img,
+.operate-edit>img {
+    width: 2.8rem;
+    margin-left: 2.06rem;
+}
+
+/*删除提示框1*/
+
+.operate-del-tips1,
+.beans-tips {
+    position: absolute;
+    top: 23.35rem;
+    left: 7.05rem;
+    width: 27.45rem;
+    height: 22.4rem;
+    background: url(../images/229.png) no-repeat;
+    background-size: 100% 100%;
+    /*display: none;*/
+}
+
+.operate-del-tips1>div.tip-img {
+    position: absolute;
+    left: 10.55rem;
+    top: 5.3rem;
+    width: 6.3rem;
+    height: 7.4rem;
+    background: url(../images/230.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.operate-del-tips1>div.tip-text,
+.beans-tips>div.tip-text {
+    position: absolute;
+    left: 7.35rem;
+    top: 12.6rem;
+    width: 13.2rem;
+    font-size: 1.3rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.2rem;
+}
+
+/*删除提示框2*/
+
+.operate-del-tips2 {
+    position: absolute;
+    top: 23.33rem;
+    left: 7.05rem;
+    width: 27.45rem;
+    height: 19.9rem;
+    background: url(../images/231.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.operate-del-tips2>div.tip-img {
+    position: absolute;
+    left: 9.25rem;
+    top: 5.2rem;
+    width: 8.3rem;
+    height: 7.4rem;
+    background: url(../images/232.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.operate-del-tips2>div.tip-text {
+    position: absolute;
+    left: 10.3rem;
+    top: 12.6rem;
+    width: 7.55rem;
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(149, 104, 38, 1);
+    line-height: 2.2rem;
+}
+
+.album-add-list>li>h1 {
+    color: rgba(105, 56, 12, 1);
+}
+
+.album-add-list>li>p {
+    font-size: 1.4rem;
+    color: #956826;
+    float: right;
+    padding-right: 1.1rem;
+}
+
+
+/*专辑名称*/
+
+.album-input,
+.addLesson-input {
+    position: absolute;
+    left: 1.05rem;
+    width: 36rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.5);
+    font-size: 1.5rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(105, 56, 12, 1);
+}
+
+.album-input>input,
+.addLesson-input>input {
+    width: 36rem;
+    background: transparent;
+    color: #956826;
+}
+
+.album-input>input::-webkit-input-placeholder {
+    color: #956826;
+}
+
+.addLesson-input>input::-webkit-input-placeholder {
+    color: #956826;
+}
+
+/*专辑简介*/
+.album-introduction {
+    top: 1.85rem;
+    left: 1.05rem;
+}
+
+/* 课程简介 */
+.addLesson-introduct {
+    margin: 2.5rem 0;
+    width: 94%;
+    /* max-height: 34%; */
+    border: 0;
+}
+
+.addLesson-textContent {
+    margin: 2.5rem 0;
+    width: 94%;
+    height: 92%;
+    border: 0;
+}
+
+.addLesson-introduct>textarea,
+.addLesson-textContent>textarea {
+    resize: none;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #FFF7DF;
+    line-height: 2.2rem;
+    color: #956826;
+}
+
+.album-introduction>textarea {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #FFF7DF;
+    line-height: 2.2rem;
+    color: #956826;
+}
+
+.album-introduction>textarea::-webkit-input-placeholder,
+.addLesson-introduct>textarea::-webkit-input-placeholder,
+.addLesson-textContent>textarea::-webkit-input-placeholder {
+    color: #956826;
+}
+
+.album-introduction-box {
+    position: absolute;
+    width: 92.5%;
+    height: 89.66%;
+    top: 4rem;
+    left: 1.5rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+}
+
+.addLesson-introduction-box,
+.addLesson-text-box {
+    position: absolute;
+    width: 92.5%;
+    height: 89.66%;
+    top: 4rem;
+    left: 1.5rem;
+    background-color: #FFF7DF;
+    border-radius: 1rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.green-top,
+.addLesson-top {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 95%;
+    height: 4.7rem;
+    background: #95DA42;
+    border-radius: 2.35rem 2.35rem 1rem 1rem;
+    box-shadow: 0px 1px 2px 0px rgba(193, 172, 114, 0.5);
+    z-index: 350;
+    text-align: center;
+    line-height: 4.7rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+.perEditCompleted {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.9rem;
+    z-index: 11000;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 1rem 1rem 0px 0px;
+    font-size: 1.5rem;
+    color: rgba(255, 104, 63, 1);
+    text-align: right;
+    line-height: 4.9rem;
+    padding: 0 2.2rem;
+    display: none;
+}
+
+.editCompleted,
+.editBtn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.9rem;
+    z-index: 11000;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 1rem 1rem 0px 0px;
+    font-size: 1.5rem;
+    color: rgba(48, 160, 7, 1);
+    text-align: right;
+    line-height: 4.9rem;
+    padding: 0 2.2rem;
+    display: none;
+}
+
+.editOver {
+    float: right;
+    margin: 1.35rem 0;
+    width: 8rem;
+}
+
+.editBtn>img {
+    float: left;
+    margin: 1.35rem 0;
+    width: 3.05rem;
+    height: 2.2rem;
+    background: url(../images/261.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.editBtn>input {
+    float: left;
+    width: 3.25rem;
+    height: 2.2rem;
+    margin: 1.35rem -3.05rem;
+    opacity: 0;
+    display: none;
+}
+
+.editStyle {
+    border: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.textImg {
+    position: relative;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.img-cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.9rem;
+    height: 2.9rem;
+    background: url(../images/217.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 9999;
+}
+
+/*专辑还没有课程*/
+
+#no-lesson-link {
+    position: relative;
+    top: 5.58rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(48, 160, 7, 1);
+}
+
+.lesson-add {
+    position: relative;
+    left: 7rem;
+    width: 25.65rem;
+    top: 27.2rem;
+    position: absolute;
+    height: 4.8rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.8rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 0.75), -1px 2px 2px rgba(21, 117, 6, 0.75), 0px 2px 2px rgba(21, 117, 6, 0.75), 0px -2px 2px rgba(21, 117, 6, 0.75);
+}
+
+/*课程修改*/
+
+.lesson-container {
+    position: relative;
+    margin: 0 1.05rem;
+    width: 36rem;
+    height: 18rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.5);
+}
+
+/*确定修改课程*/
+
+.lesson-cover-btn,
+.beans-confirm,
+.lesson-recording-btn {
+    position: absolute;
+    bottom: 6.35rem;
+    left: 6.1rem;
+    width: 26.4rem;
+    height: 4.8rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.8rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 0.75);
+}
+
+.modify-confirm {
+    position: absolute;
+    bottom: 3%;
+    left: 6.1rem;
+    width: 26.4rem;
+    height: 4.8rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.8rem;
+    font-size: 1.7rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+/*课程封面*/
+
+.lesson-cover-content {
+    position: absolute;
+    margin: 1.7rem;
+    width: 35rem;
+    height: 43.2rem;
+    overflow: hidden;
+}
+
+.lesson-cover-content>img {
+    width: 35rem;
+}
+
+.upCover {
+    position: absolute;
+    bottom: 6.35rem;
+    left: 6.1rem;
+    width: 26.4rem;
+    height: 4.8rem;
+    z-index: 9999;
+    opacity: 0;
+}
+
+/*输入智慧豆数量*/
+
+.beans-num {
+    position: relative;
+    top: 1.6rem;
+    width: 36.1rem;
+    height: 4rem;
+    background: rgba(248, 232, 176, 1);
+    border-radius: 1rem;
+    margin: 0 1.2rem;
+}
+
+.beans-img {
+    position: absolute;
+    margin: 0;
+    padding: .55rem;
+    width: 4rem;
+    height: 4rem;
+    border-right: .1rem solid rgba(109, 62, 20, 0.2);
+}
+
+.beans-img>img {
+    width: 2.7rem;
+    height: 3rem;
+}
+
+#beans-input {
+    position: absolute;
+    width: 25.7rem;
+    background: none;
+    left: 5.5rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    color: rgba(85, 50, 8, 0.6);
+}
+
+#beans-input::placeholder {
+    color: #956826;
+}
+
+.free-container {
+    position: relative;
+    top: 2.4rem;
+    margin: 0 1.2rem;
+    width: 32.1rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    color: rgba(149, 104, 38, 1);
+}
+
+.free-select {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../images/243.png) no-repeat;
+    background-size: 100% 100%;
+    margin: .6rem;
+}
+
+.free-select-checked {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../images/244.png) no-repeat;
+    background-size: 100% 100%;
+    margin: .6rem;
+}
+
+.free-container>span {
+    position: absolute;
+    left: 2.4rem;
+    line-height: 2.67rem;
+}
+
+.beans-tips>div.tip-img {
+    position: absolute;
+    left: 10.5rem;
+    top: 5.3rem;
+    width: 6.3rem;
+    height: 7.4rem;
+    background: url(../images/108.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*课程修改*/
+
+.lesson-container1 {
+    border-bottom: .1rem solid rgba(58, 141, 18, 0.5);
+    margin-bottom: .667rem;
+}
+
+.lesson-container1>.level-audio-content {
+    position: absolute;
+    width: 29.75rem;
+    top: 4.6rem;
+    left: 3.2rem;
+}
+
+.lesson-tabs {
+    position: absolute;
+    width: 6.75rem;
+    height: 3.5rem;
+    text-align: center;
+    /* line-height: 35px; */
+    bottom: 0;
+    font-size: 1.5rem;
+    color: rgba(58, 141, 18, 0.6);
+}
+
+.lesson-left {
+    left: 6.6rem;
+}
+
+.lesson-right {
+    right: 6.6rem;
+}
+
+.lesson-tabs-checked {
+    bottom: 0;
+    border-bottom: .3rem solid rgba(58, 141, 18, 1);
+    color: rgba(58, 141, 18, 1);
+}
+
+/*课程修改*/
+
+.lesson-tabs-list {
+    position: relative;
+    width: 36rem;
+    height: 68%;
+    top: 0;
+    left: 1.05rem;
+    font-size: 1.5rem;
+    color: rgba(105, 56, 12, 1);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.lesson-tabs-list>li {
+    position: relative;
+    width: 35.45rem;
+    line-height: 4.5rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.5);
+}
+
+.lesson-tabs-list>li>p {
+    display: inline;
+}
+
+#lesson-tabs-score {
+    position: relative;
+    width: 35.45rem;
+    height: 13.7rem;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.5);
+}
+
+.score-detail2 {
+    position: relative;
+    top: -1.67rem;
+    left: -1.875rem;
+}
+
+.score-detail2>ul>li {
+    float: left;
+    margin: .3335rem 3.06rem;
+}
+
+#lesson-summary {
+    padding: .667rem 0;
+    position: relative;
+    width: 35.45rem;
+    height: 14.3rem;
+    border-bottom: 0;
+    line-height: 2.3rem;
+}
+
+.lesson-confirm {
+    left: 4.1rem;
+    width: 26.4rem;
+    height: 4.8rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*留言信息*/
+
+.message-list-content {
+    position: relative;
+    width: 38.7rem;
+    height: 60.17%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.message-list {
+    position: relative;
+    width: 29.45rem;
+    top: 0;
+    left: 2.05rem;
+    font-size: 1.5rem;
+    color: rgba(105, 56, 12, 1);
+}
+
+.message-list>li {
+    float: left;
+    border-bottom: .1rem solid rgba(229, 194, 138, 0.3);
+}
+
+.message-reply {
+    position: relative;
+    left: 23.4rem;
+    top: -1rem;
+    width: 8.25rem;
+    height: 3.4rem;
+    text-align: center;
+    line-height: 3.4rem;
+    background: url(../images/224.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 1px 0px rgba(21, 117, 6, 1);
+}
+
+/* 回复 */
+
+.replayInner {
+    display: none;
+}
+
+.replay-content {
+    position: fixed;
+    left: 1.4rem;
+    width: 33.6rem;
+    height: 6.2rem;
+    bottom: 0;
+    padding: 1rem 1rem;
+    border-radius: .5rem 0 0 .5rem;
+    font-size: 1.3rem;
+}
+
+.replay-btn {
+    position: fixed;
+    bottom: 0;
+    line-height: 6.2rem;
+    width: 5.3rem;
+    height: 6.2rem;
+    right: 1.4rem;
+    text-align: center;
+    z-index: 510;
+    font-size: 1.3rem;
+    color: rgba(85, 50, 8, 1);
+    background: white;
+    border: .1rem solid rgba(229, 194, 138, 0.3);
+    border-radius: 0 .5rem .5rem 0;
+    word-wrap: break-word;
+    word-break: normal;
+    /* display: none; */
+}
+
+/*新增课程*/
+
+.lesson-recording1 {
+    position: absolute;
+    left: 8.6rem;
+    top: 8.68rem;
+    width: 8.35rem;
+    height: 8.35rem;
+    background: url(../images/237.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-upload1 {
+    position: absolute;
+    right: 8.6rem;
+    top: 8.68rem;
+    width: 8.35rem;
+    height: 8.35rem;
+    background: url(../images/239.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-record {
+    position: absolute;
+    right: 8.6rem;
+    top: 8.68rem;
+    width: 8.35rem;
+    height: 14.85rem;
+}
+
+/*点击后*/
+
+.lesson-recording2 {
+    width: 8.35rem;
+    height: 8.35rem;
+    background: url(../images/238.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-upload2 {
+    width: 8.35rem;
+    height: 8.35rem;
+    background: url(../images/240.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*课程录音*/
+
+.lesson-recording-container {
+    margin: 0 1rem;
+    position: absolute;
+    width: 36.5rem;
+    height: 24.1rem;
+    border-bottom: .1rem solid rgba(58, 141, 18, 0.5);
+}
+
+.lesson-recording-container>div.level-audio-content {
+    position: absolute;
+    width: 29rem;
+    top: 4.6rem;
+    left: 2.89rem;
+}
+
+.lesson-recording-container>div.level-audio-content {
+    position: absolute;
+    top: 11.1rem;
+}
+
+/*录音前*/
+
+.lesson-recording-bofore,
+.lesson-recording-after {
+    position: absolute;
+    left: 14.6rem;
+    top: 32rem;
+    width: 9.35rem;
+    height: 12.4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgba(58, 141, 18, 1);
+    line-height: 2.1rem;
+}
+
+.lesson-recording-bofore>img,
+.lesson-recording-after>img {
+    width: 9.35rem;
+}
+
+/*选择课程*/
+
+.lesson-choose-list {
+    position: absolute;
+    margin: 1.5rem .675rem;
+    width: 33.1rem;
+    height: 51.2rem;
+    overflow: auto;
+}
+
+.lesson-choose-list>ul>li {
+    float: left;
+    margin: .5rem .5rem;
+}
+
+.lesson-choose-content {
+    width: 10.05rem;
+    height: 13.6rem;
+    background: url(../images/others.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-unchoosed {
+    position: relative;
+    top: .25rem;
+    left: 8.1rem;
+    width: 1.95rem;
+    height: 1.95rem;
+    background: url(../images/245.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-choosed {
+    width: 1.95rem;
+    height: 1.95rem;
+    background: url(../images/246.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lesson-time-length {
+    position: relative;
+    top: 9.67rem;
+    left: 4.7rem;
+    width: 4.7rem;
+    font-size: .75rem;
+    font-family: PingFang-SC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.lesson-time-length>img {
+    width: 1.15rem;
+}
+
+.choose-confirm {
+    bottom: 2rem;
+    left: 4.1rem;
+    width: 26.4rem;
+    height: 4.8rem;
+    background: url(../images/166.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*ios不支持*/
+
+.not-support-img {
+    position: absolute;
+    width: 12.7rem;
+    height: 12.7rem;
+    top: 17.7rem;
+    left: 10.75rem;
+    background: url(../images/248.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+/*分享结果页面*/
+.share-result-btn {
+    position: absolute;
+    top: 28rem;
+    left: 22%;
+    width: 54.5%;
+    height: 4.95rem;
+    background: url("../images/249.png") no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 4.95rem;
+    font-size: 1.8rem;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 2px 2px rgba(21, 117, 6, 1), -1px 2px 2px rgba(21, 117, 6, 1), 0px 2px 2px rgba(21, 117, 6, 1), 0px -2px 2px rgba(21, 117, 6, 1);
+}
+
+/*签到*/
+
+.calendar {
+    margin-top: 4.1rem;
+    width: 36.0rem;
+    margin-left: 2.5rem;
+}
+
+.calendar-count {
+    margin-top: 6.1rem;
+    width: 80%;
+    height: 3rem;
+    margin-left: 4rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.calendar-count>.calendar-all {
+    position: absolute;
+    top: 35.1rem;
+    left: 6.45rem;
+    width: 14.05rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.calendar-count>.calendar-num {
+    position: absolute;
+    top: 35.1rem;
+    left: 23.25rem;
+    width: 15.05rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.home-recording>p {
+    width: 25rem;
+    height: 11%;
+    text-align: center;
+    background: url('../images/194.png') no-repeat;
+    background-size: 100% 100%;
+    line-height: 255%;
+    margin: 0 auto;
+    /* margin-top: 0.6%; */
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.singer_r_img {
+    display: block;
+    line-height: 4.5rem;
+    background: url(../images/sing_week.gif) right .2rem no-repeat;
+    vertical-align: middle;
+    margin-bottom: -1rem;
+    text-decoration: none;
+}
+
+.singer_r_img:hover {
+    background-position: right -5.3rem;
+    text-decoration: none;
+}
+
+.singer_r_img span {
+    margin-left: 1.4rem;
+    font-size: 1.6rem;
+    font-family: 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif !important;
+    font-weight: 700;
+    color: #165379;
+}
+
+.singer_r_img.current {
+    background: url(images/sing_sing.gif) no-repeat 0 .2rem;
+    border: 0;
+    text-decoration: none;
+}
+
+.sign_succ_calendar_title {
+    text-align: center;
+    /*width: 398px;*/
+    /*border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;*/
+    background: #fff;
+}
+
+.sign_main {
+    /*width: 400px;*/
+    /**background-color: #FBFEFE;**/
+    /* border-top: 1px solid #e3e3e3;*/
+    font-family: "Microsoft YaHei", SimHei;
+    display: block;
+}
+
+.calendar_month_span {
+    display: inline;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    color: #656565;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
+.sign_equal {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.sign_row {
+    display: table-row;
+}
+
+.sign_row div {
+    display: table-cell;
+    width: 14.3%;
+    color: #956826;
+    /*border-top: 1px solid #e3e3e3;*/
+    border-bottom: .1rem solid #e3e3e3;
+    /*border-left: 1px solid #e3e3e3;*/
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: .3rem;
+}
+
+.sign_row .bold {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(21, 117, 6, 1), -1px 1px 2px rgba(21, 117, 6, 1), 0px 1px 2px rgba(21, 117, 6, 1), 0px -1px 2px rgba(21, 117, 6, 1);
+}
+
+.fontBig {
+    font-weight: 700;
+}
+
+.sign_row div:last-child {
+    /*border-right: 1px solid #e3e3e3;*/
+}
+
+.sign_equal .sign_row:last-child div {
+    border-bottom: 0;
+}
+
+/*签到点击选择日期样式*/
+
+.sign_equal .on {
+    /*background: #4CB215;*/
+}
+
+.sign_contener,
+.sign_contener:visited {
+    line-height: 3rem;
+    background: #00a0e9;
+    border: none;
+    color: white;
+    border-radius: 3rem;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.sign_contener:hover {
+    background-color: red;
+}
+
+/*实名认证学历选择颜色*/
+
+.verified-foot-modal-color {
+    color: #30A007;
+    font-weight: 600;
+}
+
+/*选择照片*/
+
+.realname-file {
+    position: absolute;
+    left: .375rem;
+    top: 1rem;
+    opacity: 0;
+}

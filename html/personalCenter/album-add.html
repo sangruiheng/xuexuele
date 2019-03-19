@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <title>新增专辑</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/common/jquery-1.11.3.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/common/tips.js"></script>
+    <script src="../../js/personal/addAlbum.js"></script>
+</head>
+
+<body class="album-add-body">
+    <!-- 点击按钮音效 -->
+    <audio src="../../mp3/button.mp3" preload="auto" id="buttonMps"></audio>
+    <!-- 附加页面 -->
+    <audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+    <!-- 新增专辑 -->
+    <div class="album-add-container" id="albumAdd">
+        <i class="album-add-back" id="addAlbumBack"></i>
+        <span id="album-add-title">-新增专辑-</span>
+        <div class="album-add-box">
+            <ul class="album-add-list">
+                <li>
+                    <h1>专辑封面</h1>
+                    <p id="upLoad">请上传</p>
+                </li>
+                <li>
+                    <h1>专辑名称</h1>
+                    <p id="enterName">请输入专辑名称</p>
+                </li>
+                <li>
+                    <h1>专辑简介</h1>
+                    <p id="enterPresent">请输入专辑简介</p>
+                </li>
+            </ul>
+            <div class="album-add album-add-confirm" id="addAlbumBtn">确认新增</div>
+        </div>
+    </div>
+    <!-- 上传封面 -->
+    <div class="album-container" id="albumCover">
+        <i class="albumCover-back"></i>
+        <span id="album-title">-专辑封面-</span>
+        <div class="album-box">
+            <div class="submit-cancel"></div>
+            <div class="lesson-cover-content">
+                <img />
+            </div>
+            <input type="file" class="upCover" />
+            <div class="lesson-cover-btn">选择封面</div>
+            <!-- <div class="lesson-cover-btn">确认上传</div> -->
+        </div>
+    </div>
+    <!-- 专辑名称 -->
+    <div class="albumName-container" id="albumName">
+        <i class="albumName-back"></i>
+        <span id="album-add-title">-专辑名称-</span>
+        <div class="album-add-box">
+            <div class="album-input">
+                <input type="text" placeholder="请输入专辑名称(不可超过20字)" maxlength="20" id="nameContent">
+            </div>
+        </div>
+    </div>
+    <!-- 专辑简介 -->
+    <div class="album-introduction-body" id="albumIntroduct">
+        <div class="green-top">-专辑简介-</div>
+        <i class="albumIntroduct-back"></i>
+        <div class="album-introduction-box">
+            <div class="album-input album-introduction">
+                <textarea type="text" cols="20" rows="6" placeholder="请输入专辑简介(最多可输入100字)" maxlength="100" id="introductContent"></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- 封面上传 -->
+    <div class="reg-shade" id="regVavatar-shade">
+        <div class="avatar">
+            <div class="avatar_model">
+                <div class="avatar_btn"></div>
+                <label>
+                    <div class="img1"></div>
+                    <input type="file" name="importPhoto" id="importPhoto" accept="image/*" capture="camera" style="filter:alpha(opacity=0);opacity:0;width: 0;height: 0;" onclick="getImg(this)" />
+                </label>
+                <label>
+                    <div class="img2"></div>
+                    <input type="file" name="importFile" id="importFile" accept="image/*" style="filter:alpha(opacity=0);opacity:0;width: 0;height: 0;" onclick="getImg(this)"/>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 编辑完成按钮 -->
+    <div class="editCompleted">编辑完成</div>
+    <!-- tips -->
+    <div class="reg-tips"></div>
+    <div class="otherPlace">
+        <span>您已掉线,请重新登录~</span>
+        <div class="placeBtn">确定</div>
+    </div>
+</body>
+
+</html>

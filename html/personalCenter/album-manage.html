@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>课程管理</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/common/tips.js"></script>
+	<script src="../../js/personal/albumManage.js"></script>
+</head>
+
+<body class="manage-body">
+	<section class="manage-container">
+		<!-- 点击按钮音效 -->
+		<audio src="../../mp3/button.mp3" preload="auto" id="buttonMps"></audio>
+		<!-- 附加页面 -->
+		<audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+		<i class="manage-back" id="albumManageBack"></i>
+		<span id="manage-title">-课程管理-</span>
+		<div class="manage-box">
+			<div class="manage-top">
+				<img src="../../images/108.png" />
+				<span></span>
+			</div>
+			<p>(课程收入)</p>
+			<hr />
+			<div class="album-list">
+				<!-- <div class="album-manage">
+					<div class="album-href">
+						<img src="../../images/others.jpg" />
+						<h1>专辑名称</h1>
+						<p>课程数量：10</p>
+					</div>
+					<i class="manage-btn">操作</i>
+					<div class="album-operate">
+						<div class="operate-del"><img src="../../images/227.png" />删除</div>
+						<div class="operate-edit"><img src="../../images/228.png" />编辑</div>
+					</div>
+				</div>
+				<div class="album-manage">
+					<div class="album-href">
+						<img src="../../images/others.jpg" />
+						<h1>专辑名称</h1>
+						<p>课程数量：10</p>
+					</div>
+					<i class="manage-btn">操作</i>
+					<div class="album-operate">
+						<div class="operate-del"><img src="../../images/227.png" />删除</div>
+						<div class="operate-edit"><img src="../../images/228.png" />编辑</div>
+					</div>
+				</div>
+				<div class="album-manage">
+					<div class="album-href">
+						<img src="../../images/others.jpg" />
+						<h1>专辑名称</h1>
+						<p>课程数量：10</p>
+					</div>
+					<i class="manage-btn">操作</i>
+					<div class="album-operate">
+						<div class="operate-del"><img src="../../images/227.png" />删除</div>
+						<div class="operate-edit"><img src="../../images/228.png" />编辑</div>
+					</div>
+				</div> -->
+			</div>
+			<div class="noAlbum-content">
+				<div id="no-album-img"><img src="../../images/225.png" /></div>
+				<p id="no-album-text">还没有专辑哦~</p>
+			</div>
+			<div class="album-add">新增专辑</div>
+		</div>
+	</section>
+	<!--删除提示框1-->
+	<div class="operate-shade" id="delTips1">
+		<div class="operate-del-tips1">
+			<img src="../../images/39.png" id="closeBn" />
+			<div class="tip-img"></div>
+			<div class="tip-text">请将专题下课程删除，然后删除专题。</div>
+		</div>
+	</div>
+	<!--删除提示框2-->
+	<div class="operate-shade" id="delTips2">
+		<div class="operate-del-tips2">
+			<div class="tip-img"></div>
+			<div class="tip-text">删除成功！</div>
+		</div>
+	</div>
+	<div class="otherPlace">
+		<span>您已掉线,请重新登录~</span>
+		<div class="placeBtn">确定</div>
+	</div>
+</body>
+
+</html>

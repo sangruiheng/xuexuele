@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <title>百宝箱文章详情</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/home/treasureBoxAudio.js"></script>
+	<script src="../../js/common/audio.js"></script>
+</head>
+<body class="treasureBox-body">
+	<section class="treasureBox-audio">
+		<img id="treasureBoxAudioBg">
+		<i class="page-back" id="treasureBoxAudioBack"></i>
+	    <div class="audio">
+	    	<h1 id="lessonName"></h1>
+	    	<h2 id="lessonHead"></h2>
+	    	<div class="audio-content">
+	    		<audio id="lessonAudio" preload="auto"></audio>
+				<div class="progressBar">
+					<div class="progressReal"></div>
+					<i class="progressKey"></i>
+				</div>
+				<span class="successed">00:00</span>
+				<span class="unsuccessed" id="audioTime"></span>
+				<div class="progress-stop" id="progressBar"></div>
+	    	</div>
+	    </div>
+	</section>
+</body>
+</html>

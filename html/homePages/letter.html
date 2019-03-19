@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>站内信</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/common/jquery-1.11.3.min.js"></script>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/home/homeLetter.js"></script>
+	<script src="../../js/common/tips.js"></script>
+	<style>
+		.box-box {
+			width: 35.2rem;
+			height: 6.75rem;
+			background: rgba(248, 232, 176, 1);
+			border-radius: 1rem;
+			margin-bottom: 1.1rem;
+			overflow: hidden;
+		}
+
+		.list {
+			overflow: hidden;
+			/* margin-top: .2rem;
+			padding-left: .3rem; */
+		}
+
+		.list li {
+			overflow: hidden;
+			width: 120%;
+		}
+
+		.list li a {
+			display: block;
+			height: 8.8rem;
+			font-size: 1.3rem;
+			-webkit-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+		}
+
+		.list li i {
+			float: right;
+			width: 6.175rem;
+			text-align: center;
+			background: #F65F40;
+			color: #fff;
+			height: 6.75rem;
+			border-radius: 1rem
+		}
+
+		.swipeleft {
+			transform: translateX(-17.1%);
+			-webkit-transform: translateX(-17.1%);
+		}
+
+		.list .box-text {
+			width: 33.5rem;
+			float: left;
+			overflow: hidden;
+		}
+
+		.list .readList {
+			float: left;
+			margin-left: .8rem;
+			font-size: 1.2rem;
+		}
+		.list .readList span {
+			margin-top: 1rem;
+			font-size: 1.5rem;
+			font-family: MicrosoftYaHei;
+			font-weight: 400;
+			color: rgba(85, 50, 8, 1);
+		}
+
+		.list .span {
+			float: right;
+			margin-top: 1rem;
+		}
+
+		.list .box-text .ov-text {
+			width: 29.5rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			padding-top: 1rem;
+			padding-left: 2.075rem;
+			font-size: 1.3rem;
+			font-family: MicrosoftYaHei;
+			font-weight: 400;
+			color: rgba(85, 50, 8, 1);
+		}
+
+		.list .readList img {
+			margin-top: -0.7rem;
+			width: 1.65rem;
+		}
+
+		.del-key {
+			width: 1.875rem;
+			height: 2rem;
+			margin-top: 2.075rem;
+		}
+	</style>
+</head>
+
+<body class="letter-body">
+	<section class="letter-container">
+		<audio src="../../mp3/homeBackgroud.mp3" autoplay loop></audio>
+		<!-- 附加页面 -->
+		<audio src="../../mp3/otherPages.mp3" id="otherPages" preload="auto"></audio>
+		<i class="page-back1"></i>
+		<div class="letter-content">
+			<h1>-站内信-</h1>
+			<div class="letter-wrapper" id="letter-Wrapper">
+				<div class="list">
+
+					<!-- <li>
+						<a href="#">
+							<p class="readList"><span>站内信标题</span></p>
+							<span>2017-01-01</span>
+							<p>站内信内容站内信内容站内信内容站内信内容站内信内容站内信内容站内信内容站内信内容</p>
+							<i>
+								<img src="../../images/69.png" class="del-key" />
+							</i>
+						</a>
+					</li>
+					<li><a href="#">侧滑显示删除按钮2<i><img src="../../images/69.png" class="del-key" /></i></a></li>
+					<li><a href="#">侧滑显示删除按钮3<i><img src="../../images/69.png" class="del-key" /></i></a></li> -->
+
+				</div>
+				<div class="noletter">
+					<div class="noletter-result"></div>
+					<div class="noletter-text">
+						还没有收到站内信息哦~
+					</div>
+				</div>
+			</div>
+			<div class="mailbox"></div>
+		</div>
+	</section>
+	<div class="reg-tips"></div>
+	<!-- 掉线 -->
+	<div class="otherPlace">
+		<span>您已掉线,请重新登录~</span>
+		<div class="placeBtn">确定</div>
+	</div>
+</body>
+
+</html>
